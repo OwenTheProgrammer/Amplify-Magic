@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Pixelate (AA)
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.2.2\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19202\nNode;AmplifyShaderEditor.CommentaryNode;48;-352,-256;Inherit;False;378;262;Slide
+    UV on edges;3;47;46;27;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;43;-1504,-48;Inherit;False;1125;255;Integral
+    step function on pixel boundaries;11;41;42;35;34;33;40;32;31;29;30;39;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;25;-1152,-352;Inherit;False;732;205;Largest
+    domain size;5;37;22;24;23;19;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;21;-1152,-528;Inherit;False;620;159;Half
+    pixel offset;4;16;15;17;36;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;20;-1760,-496;Inherit;False;548;259;Texel
+    space to pixel space;4;1;14;10;45;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.FunctionNode;19;-1120,-320;Inherit;False;UV
+    ddxy;-1;;1;55220d587d517ba4c8033462954ee4b1;0;1;1;FLOAT2;0,0;False;6;FLOAT2;0;FLOAT2;9;FLOAT;22;FLOAT4;12;FLOAT4;15;FLOAT2;27\nNode;AmplifyShaderEditor.SwizzleNode;23;-896,-320;Inherit;False;FLOAT2;0;1;2;3;1;0;FLOAT4;0,0,0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SwizzleNode;24;-896,-224;Inherit;False;FLOAT2;2;3;2;3;1;0;FLOAT4;0,0,0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleMaxOpNode;22;-736,-320;Inherit;False;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.GetLocalVarNode;39;-1488,112;Inherit;False;37;domSize;1;0;OBJECT;;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.OneMinusNode;30;-1312,112;Inherit;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleSubtractOpNode;29;-1168,16;Inherit;False;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;31;-1024,16;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.RangedFloatNode;32;-1168,112;Inherit;False;Constant;_Float1;Float
+    1;1;0;Create;True;0;0;0;False;0;False;0.5;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;40;-1024,112;Inherit;False;37;domSize;1;0;OBJECT;;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleDivideOpNode;33;-832,16;Inherit;False;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SaturateNode;34;-720,16;Inherit;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleSubtractOpNode;35;-560,16;Inherit;False;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.GetLocalVarNode;42;-752,112;Inherit;False;36;f_uv;1;0;OBJECT;;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.GetLocalVarNode;41;-1360,16;Inherit;False;36;f_uv;1;0;OBJECT;;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;27;-304,-128;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.GetLocalVarNode;46;-336,-208;Inherit;False;44;texCoord;1;0;OBJECT;;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;47;-96,-176;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.TexelSizeNode;1;-1744,-448;Inherit;False;-1;1;0;SAMPLER2D;;False;5;FLOAT4;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.SwizzleNode;28;-1520,-128;Inherit;False;FLOAT2;0;1;2;3;1;0;FLOAT4;0,0,0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.GetLocalVarNode;45;-1536,-368;Inherit;False;44;texCoord;1;0;OBJECT;;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SwizzleNode;14;-1504,-448;Inherit;False;FLOAT2;2;3;2;3;1;0;FLOAT4;0,0,0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;10;-1360,-448;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionOutput;0;48,-176;Inherit;False;True;-1;Pixelated
+    UV (AA);0;True;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;36;-752,-480;Inherit;False;f_uv;-1;True;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FractNode;17;-864,-480;Inherit;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;15;-976,-480;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.RangedFloatNode;16;-1136,-480;Inherit;False;Constant;_Float0;Float
+    0;1;0;Create;True;0;0;0;False;0;False;0.5;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;37;-624,-320;Inherit;False;domSize;-1;True;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.TexturePropertyNode;7;-2224,-448;Inherit;True;Property;_MainTex;MainTex;0;0;Fetch;True;0;0;0;False;0;False;e24b2c680edaa90458d31f11544d79ca;e24b2c680edaa90458d31f11544d79ca;False;white;Auto;Texture2D;-1;0;2;SAMPLER2D;0;SAMPLERSTATE;1\nNode;AmplifyShaderEditor.FunctionInput;8;-2000,-448;Inherit;False;Texture;9;0;False;1;0;SAMPLER2D;;False;1;SAMPLER2D;0\nNode;AmplifyShaderEditor.TextureCoordinatesNode;4;-1728,-688;Inherit;False;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.FunctionInput;3;-1520,-688;Inherit;False;UV;2;1;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;44;-1376,-688;Inherit;False;texCoord;-1;True;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nWireConnection;19;1;10;0\nWireConnection;23;0;19;15\nWireConnection;24;0;19;15\nWireConnection;22;0;23;0\nWireConnection;22;1;24;0\nWireConnection;30;0;39;0\nWireConnection;29;0;41;0\nWireConnection;29;1;30;0\nWireConnection;31;0;29;0\nWireConnection;31;1;32;0\nWireConnection;33;0;31;0\nWireConnection;33;1;40;0\nWireConnection;34;0;33;0\nWireConnection;35;0;34;0\nWireConnection;35;1;42;0\nWireConnection;27;0;28;0\nWireConnection;27;1;35;0\nWireConnection;47;0;46;0\nWireConnection;47;1;27;0\nWireConnection;1;0;8;0\nWireConnection;28;0;1;0\nWireConnection;14;0;1;0\nWireConnection;10;0;14;0\nWireConnection;10;1;45;0\nWireConnection;0;0;47;0\nWireConnection;36;0;17;0\nWireConnection;17;0;15;0\nWireConnection;15;0;16;0\nWireConnection;15;1;10;0\nWireConnection;37;0;22;0\nWireConnection;8;0;7;0\nWireConnection;4;2;8;0\nWireConnection;3;0;4;0\nWireConnection;44;0;3;0\nASEEND*/\n//CHKSM=451290B65117B19F8D158F87B7C89C787F9A2846"
+  m_functionName: 
+  m_description: Integral based pixelation method using the texel size of your sampler
+    to anti alias the edges.
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 2
+  m_headerColor: {r: 0.9843137, g: 0.8509804, b: 0.3529412, a: 1}
+  m_customNodeCategory: _Shader Trixx
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: https://github.com/cnlohr/shadertrixx?tab=readme-ov-file#lyuma-beautiful-retro-pixels-technique

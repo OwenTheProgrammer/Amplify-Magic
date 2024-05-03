@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Smooth Max
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.2.2\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19202\nNode;AmplifyShaderEditor.CommentaryNode;1;-1118.286,50.28571;Inherit;False;586;311;Absolute
+    with k term smoothing;7;16;15;10;5;4;3;2;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.SimpleSubtractOpNode;2;-1067.286,100.2857;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;3;-923.2857,100.2857;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;4;-763.2857,100.2857;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SqrtOpNode;5;-651.2857,100.2857;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;6;-395.2857,-107.7143;Inherit;False;3;3;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.TextureCoordinatesNode;11;-1595.286,-139.7143;Inherit;False;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.FunctionInput;13;-1339.286,-107.7143;Inherit;False;A;1;0;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;14;-1339.286,-27.71429;Inherit;False;B;1;1;True;1;0;FLOAT;0.25;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;8;-240,-112;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;9;-416,16;Inherit;False;Constant;_Float0;Float
+    0;0;0;Create;True;0;0;0;False;0;False;0.5;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;12;-96,-112;Inherit;False;True;-1;Output;0;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;10;-1104,192;Inherit;False;Smooth
+    Term;1;2;True;1;0;FLOAT;0.1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMaxOpNode;15;-896,192;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;16;-1072,272;Inherit;False;Constant;_Float1;Float
+    1;0;0;Create;True;0;0;0;False;0;False;0;0;0;0;0;1;FLOAT;0\nWireConnection;2;0;13;0\nWireConnection;2;1;14;0\nWireConnection;3;0;2;0\nWireConnection;3;1;2;0\nWireConnection;4;0;3;0\nWireConnection;4;1;15;0\nWireConnection;5;0;4;0\nWireConnection;6;0;13;0\nWireConnection;6;1;14;0\nWireConnection;6;2;5;0\nWireConnection;13;0;11;1\nWireConnection;8;0;6;0\nWireConnection;8;1;9;0\nWireConnection;12;0;8;0\nWireConnection;15;0;10;0\nWireConnection;15;1;16;0\nASEEND*/\n//CHKSM=43BC94623BEC69B7C1E89FE55C9D50442DE2ED56"
+  m_functionName: 
+  m_description: Maximum function with a smoothing term.
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 2
+  m_headerColor: {r: 0.5568628, g: 0.32941177, b: 0.91764706, a: 1}
+  m_customNodeCategory: _Math Utils
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 

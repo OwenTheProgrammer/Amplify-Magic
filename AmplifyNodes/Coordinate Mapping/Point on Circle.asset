@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Point on Circle
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.2.2\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19202\nNode;AmplifyShaderEditor.CommentaryNode;17;-384,192;Inherit;False;688;266;[-1
+    | 1] -> [0 | 1];4;18;14;16;13;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;8;-976,-66;Inherit;False;883;247;Point
+    on Circle Position;7;0;5;2;4;7;6;1;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.TauNode;6;-896,64;Inherit;False;0;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;7;-768,-16;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CosOpNode;4;-608,-16;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SinOpNode;2;-608,64;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.DynamicAppendNode;5;-496,-16;Inherit;False;FLOAT2;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;13;-176,256;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;16;-16,304;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.RangedFloatNode;14;-336,336;Inherit;False;Constant;_Float0;Float
+    0;0;0;Create;True;0;0;0;False;0;False;0.5;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;18;112,304;Inherit;False;False;-1;UV
+    Point [0 | 1];1;True;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionOutput;0;-336,-16;Inherit;False;True;-1;UV
+    Point [-1 | 1];0;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionInput;1;-960,-16;Inherit;False;Angle
+    [0 | 1];1;0;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleTimeNode;19;-1152,-16;Inherit;False;1;0;FLOAT;0.25;False;1;FLOAT;0\nWireConnection;7;0;1;0\nWireConnection;7;1;6;0\nWireConnection;4;0;7;0\nWireConnection;2;0;7;0\nWireConnection;5;0;4;0\nWireConnection;5;1;2;0\nWireConnection;13;0;5;0\nWireConnection;13;1;14;0\nWireConnection;16;0;13;0\nWireConnection;16;1;14;0\nWireConnection;18;0;16;0\nWireConnection;0;0;5;0\nWireConnection;1;0;19;0\nASEEND*/\n//CHKSM=73646A6BBA903CE7410A12103BA3B145F77F839E"
+  m_functionName: 
+  m_description: "Returns the UV position of a point on a circle. \n0 will return
+    (1, 0) | 0.5 will return (0, 1) and so on."
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 0
+  m_headerColor: {r: 1, g: 0.4, b: 0, a: 1}
+  m_customNodeCategory: _Coordinate Mapping
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 

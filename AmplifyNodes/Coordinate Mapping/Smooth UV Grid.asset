@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Smooth UV Grid
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.2.2\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19202\nNode;AmplifyShaderEditor.CommentaryNode;17;-496,96;Inherit;False;589;220;Partial
+    derivative continuity fix;4;18;20;13;19;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;5;-674,-98;Inherit;False;470;175;UV
+    Grid;3;0;4;3;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.FunctionInput;2;-826.5,68;Inherit;False;Grid
+    Size;2;1;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;3;-624,-48;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FractNode;4;-464,-48;Inherit;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionOutput;0;-352,-48;Inherit;False;True;-1;TexCoord;0;True;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SwizzleNode;19;-192,144;Inherit;False;FLOAT2;0;1;2;3;1;0;FLOAT4;0,0,0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionOutput;13;-48,144;Inherit;False;False;-1;ddx;1;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SwizzleNode;20;-192,224;Inherit;False;FLOAT2;2;3;2;3;1;0;FLOAT4;0,0,0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionOutput;18;-48,224;Inherit;False;False;-1;ddy;2;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.TextureCoordinatesNode;21;-1072,-48;Inherit;False;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.FunctionInput;1;-816,-48;Inherit;False;UV;2;0;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionNode;22;-448,144;Inherit;False;UV
+    ddxy;-1;;3;55220d587d517ba4c8033462954ee4b1;0;1;1;FLOAT2;0,0;False;4;FLOAT2;0;FLOAT2;9;FLOAT4;12;FLOAT4;15\nWireConnection;3;0;1;0\nWireConnection;3;1;2;0\nWireConnection;4;0;3;0\nWireConnection;0;0;4;0\nWireConnection;19;0;22;15\nWireConnection;13;0;19;0\nWireConnection;20;0;22;15\nWireConnection;18;0;20;0\nWireConnection;1;0;21;0\nWireConnection;22;1;3;0\nASEEND*/\n//CHKSM=E6661BD4E55E469551D5A315A3BAF8FD4C4EA617"
+  m_functionName: 
+  m_description: Ever need a grid of one image and find frac makes weird edges? ill
+    hurt you if you turn off mipmaps. This fixes that.
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 0
+  m_headerColor: {r: 1, g: 0.4, b: 0, a: 1}
+  m_customNodeCategory: _Coordinate Mapping
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 

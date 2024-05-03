@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Stereo Screen Position
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.2.2\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19202\nNode;AmplifyShaderEditor.CommentaryNode;18;-432,-304;Inherit;False;494;211;Screen
+    Position;4;16;15;17;20;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;7;-928,-80;Inherit;False;776;441;Clip
+    space position;9;4;9;5;10;1;2;6;3;19;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.RangedFloatNode;3;-832,128;Inherit;False;Constant;_Float0;Float
+    0;0;0;Create;True;0;0;0;False;0;False;0.5;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;6;-656,192;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.PosVertexDataNode;2;-896,-32;Inherit;False;0;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.UnityObjToClipPosHlpNode;1;-688,-32;Inherit;False;1;0;FLOAT3;0,0,0;False;5;FLOAT4;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.DynamicAppendNode;10;-464,16;Inherit;False;FLOAT2;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.DynamicAppendNode;5;-464,128;Inherit;False;FLOAT2;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;9;-304,16;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.ProjectionParams;4;-896,208;Inherit;False;0;5;FLOAT4;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.RegisterLocalVarNode;19;-464,224;Inherit;False;vertex_w;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;17;-208,-256;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;15;-368,-256;Inherit;False;Constant;_Float1;Float
+    1;0;0;Create;True;0;0;0;False;0;False;0.5;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;16;-48,-256;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.GetLocalVarNode;20;-400,-176;Inherit;False;19;vertex_w;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CustomExpressionNode;13;128,-256;Inherit;False;return
+    TransformStereoScreenSpaceTex(uv, w)@;2;Create;2;True;uv;FLOAT2;0,0;In;;Float;False;True;w;FLOAT;0;In;;Float;False;TransformStereoScreenSpaceTex;True;False;0;;False;2;0;FLOAT2;0,0;False;1;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionOutput;0;416,-256;Inherit;False;True;-1;Screen
+    Space position;0;True;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.GetLocalVarNode;21;-96,-80;Inherit;False;19;vertex_w;1;0;OBJECT;;False;1;FLOAT;0\nWireConnection;6;0;3;0\nWireConnection;6;1;4;1\nWireConnection;1;0;2;0\nWireConnection;10;0;1;1\nWireConnection;10;1;1;2\nWireConnection;5;0;3;0\nWireConnection;5;1;6;0\nWireConnection;9;0;10;0\nWireConnection;9;1;5;0\nWireConnection;19;0;1;4\nWireConnection;17;0;15;0\nWireConnection;17;1;20;0\nWireConnection;16;0;17;0\nWireConnection;16;1;9;0\nWireConnection;13;0;16;0\nWireConnection;13;1;21;0\nWireConnection;0;0;13;0\nASEEND*/\n//CHKSM=C67303E0D4DB7A42BF3E1AA8059379FE541552B7"
+  m_functionName: 
+  m_description: Gets the VR screen space UV of your eye
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 1
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 0
+  m_headerColor: {r: 1, g: 0.4, b: 0, a: 1}
+  m_customNodeCategory: _Shader Trixx
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 

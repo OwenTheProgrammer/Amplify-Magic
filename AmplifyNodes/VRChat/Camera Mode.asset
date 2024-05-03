@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Camera Mode
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.2.2\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19202\nNode;AmplifyShaderEditor.CommentaryNode;9;-528,160;Inherit;False;660;223;Check
+    for the VRChat Handheld camera;3;8;7;6;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;5;-530,-98;Inherit;False;676;235;Check
+    for normal camera rendering;3;0;4;3;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.RangedFloatNode;4;-480,16;Inherit;False;Constant;_RENDERTYPE_NORMAL;RENDERTYPE_NORMAL;0;0;Create;True;0;0;0;False;0;False;0;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.Compare;3;-240,-48;Inherit;False;0;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.Compare;7;-256,208;Inherit;False;0;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;8;-496,272;Inherit;False;Constant;_RENDERTYPE_HANDHELD;RENDERTYPE_HANDHELD;0;0;Create;True;0;0;0;False;0;False;1;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.CommentaryNode;10;-526,416;Inherit;False;711;222;Check
+    for the VRChat Handheld camera in desktop;3;11;13;12;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.Compare;12;-240,464;Inherit;False;0;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;13;-512,528;Inherit;False;Constant;_RENDERTYPE_DESKTOPCAM;RENDERTYPE_DESKTOPCAM;0;0;Create;True;0;0;0;False;0;False;2;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.CommentaryNode;14;-528,656;Inherit;False;711;222;Check
+    for VRChat screenshot camera;3;17;16;15;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.Compare;15;-240,704;Inherit;False;0;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;17;-512,768;Inherit;False;Constant;_RENDERTYPE_SCREENSHOT;RENDERTYPE_SCREENSHOT;0;0;Create;True;0;0;0;False;0;False;3;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;1;-1072,-224;Float;False;Global;_VRChatCameraMode;_VRChatCameraMode;0;1;[HideInInspector];Create;True;0;0;0;True;1;uniform;False;0;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;0;-96,-48;Inherit;False;True;-1;[0]
+    Is Normal;1;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;6;-112,208;Inherit;False;False;-1;[1]
+    Is Handheld (VR);2;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;11;-96,464;Inherit;False;False;-1;[2]
+    Is Handheld (Desktop);3;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;18;-80,-224;Inherit;False;False;-1;Value;0;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;16;-96,704;Inherit;False;False;-1;[3]
+    Is Screenshot;4;False;1;0;FLOAT;0;False;1;FLOAT;0\nWireConnection;3;0;1;0\nWireConnection;3;1;4;0\nWireConnection;7;0;1;0\nWireConnection;7;1;8;0\nWireConnection;12;0;1;0\nWireConnection;12;1;13;0\nWireConnection;15;0;1;0\nWireConnection;15;1;17;0\nWireConnection;0;0;3;0\nWireConnection;6;0;7;0\nWireConnection;11;0;12;0\nWireConnection;18;0;1;0\nWireConnection;16;0;15;0\nASEEND*/\n//CHKSM=17C88074AE51A645E1254F4D8F95C42E87683B1D"
+  m_functionName: 
+  m_description: Interface to the uniform global float _VRChatCameraMode
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 1
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 2
+  m_headerColor: {r: 0.5568628, g: 0.32941177, b: 0.91764706, a: 1}
+  m_customNodeCategory: _VRChat
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: https://creators.vrchat.com/worlds/vrc-graphics/vrchat-shader-globals

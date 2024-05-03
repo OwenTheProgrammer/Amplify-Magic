@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Filtered Cosine
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.2.2\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19202\nNode;AmplifyShaderEditor.CommentaryNode;9;-400,-144;Inherit;False;324;187;sinc(w);2;4;8;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;7;-802,-146;Inherit;False;388;227;Domain
+    Size;3;2;6;5;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.FWidthOpNode;2;-752,-96;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;6;-752,-32;Inherit;False;Constant;_Float0;Float
+    0;0;0;Create;True;0;0;0;False;0;False;0.5;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;5;-592,-96;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SinOpNode;4;-352,-96;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleDivideOpNode;8;-224,-96;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CosOpNode;3;-144,-256;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;10;-32,-256;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;0;112,-256;Inherit;True;True;-1;Output;0;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;1;-1040,-256;Inherit;False;Input;1;0;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.TextureCoordinatesNode;19;-1408,-272;Inherit;False;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.ReciprocalOpNode;21;-1200,-256;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nWireConnection;2;0;1;0\nWireConnection;5;0;2;0\nWireConnection;5;1;6;0\nWireConnection;4;0;5;0\nWireConnection;8;0;4;0\nWireConnection;8;1;5;0\nWireConnection;3;0;1;0\nWireConnection;10;0;3;0\nWireConnection;10;1;8;0\nWireConnection;0;0;10;0\nWireConnection;1;0;21;0\nWireConnection;21;0;19;1\nASEEND*/\n//CHKSM=2BDEC39A798E628348271B05043D64133D19D223"
+  m_functionName: 
+  m_description: Impulse band limited cosine implementation
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 2
+  m_headerColor: {r: 0.5568628, g: 0.32941177, b: 0.91764706, a: 1}
+  m_customNodeCategory: _Math Utils
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 

@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: UV ddxy
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.2.2\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19202\nNode;AmplifyShaderEditor.CommentaryNode;17;-640,-240;Inherit;False;990;349;ddx(u)
+    ddy(v);10;22;20;21;8;4;3;9;0;5;2;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;16;-640,224;Inherit;False;628;259;ddx(uv)
+    ddy(uv);6;14;15;12;13;10;11;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.BreakToComponentsNode;2;-592,-192;Inherit;False;FLOAT2;1;0;FLOAT2;0,0;False;16;FLOAT;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT;5;FLOAT;6;FLOAT;7;FLOAT;8;FLOAT;9;FLOAT;10;FLOAT;11;FLOAT;12;FLOAT;13;FLOAT;14;FLOAT;15\nNode;AmplifyShaderEditor.DynamicAppendNode;5;-336,-192;Inherit;False;FLOAT2;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.DdxOpNode;3;-464,-192;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.DdyOpNode;4;-464,-112;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;1;-912,0;Inherit;False;UV;2;0;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.DynamicAppendNode;13;-464,288;Inherit;False;FLOAT4;4;0;FLOAT2;0,0;False;1;FLOAT;0;False;2;FLOAT2;0,0;False;3;FLOAT;0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.DdxOpNode;10;-592,272;Inherit;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.DdyOpNode;11;-592,352;Inherit;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionOutput;12;-192,288;Inherit;False;False;-1;ddxy;3;False;1;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.FunctionOutput;15;-192,368;Inherit;False;False;-1;ddxy
+    (abs);4;False;1;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.TextureCoordinatesNode;18;-1152,0;Inherit;False;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.AbsOpNode;8;-144,-112;Inherit;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.BreakToComponentsNode;21;-50.5,4;Inherit;False;FLOAT2;1;0;FLOAT2;0,0;False;16;FLOAT;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT;5;FLOAT;6;FLOAT;7;FLOAT;8;FLOAT;9;FLOAT;10;FLOAT;11;FLOAT;12;FLOAT;13;FLOAT;14;FLOAT;15\nNode;AmplifyShaderEditor.SimpleMaxOpNode;20;64,0;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.AbsOpNode;14;-304,368;Inherit;False;1;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.AbsOpNode;25;-352,528;Inherit;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.AbsOpNode;26;-352,608;Inherit;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleMaxOpNode;23;-224,528;Inherit;False;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionOutput;22;176,0;Inherit;False;False;-1;max(
+    dx dy );2;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;9;0,-112;Inherit;False;False;-1;dx
+    dy (abs);1;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionOutput;0;32,-192;Inherit;False;True;-1;dx
+    dy;0;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionOutput;27;-112,528;Inherit;False;False;-1;max(
+    ddx ddy );5;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nWireConnection;2;0;1;0\nWireConnection;5;0;3;0\nWireConnection;5;1;4;0\nWireConnection;3;0;2;0\nWireConnection;4;0;2;1\nWireConnection;1;0;18;0\nWireConnection;13;0;10;0\nWireConnection;13;2;11;0\nWireConnection;10;0;1;0\nWireConnection;11;0;1;0\nWireConnection;12;0;13;0\nWireConnection;15;0;14;0\nWireConnection;8;0;5;0\nWireConnection;21;0;8;0\nWireConnection;20;0;21;0\nWireConnection;20;1;21;1\nWireConnection;14;0;13;0\nWireConnection;25;0;10;0\nWireConnection;26;0;11;0\nWireConnection;23;0;25;0\nWireConnection;23;1;26;0\nWireConnection;22;0;20;0\nWireConnection;9;0;8;0\nWireConnection;0;0;5;0\nWireConnection;27;0;23;0\nASEEND*/\n//CHKSM=181A0AF8B196E6F3DCDFD59DF2F07F2A09E1B914"
+  m_functionName: 
+  m_description: 'Computes the DDX DDY values on a given UV term
+
+    ddx ddy is
+    ( ddx(u), ddy(v) )
+
+    ddxy is ( ddx(uv), ddy(uv) )
+
+    and abs just means
+    the derivative is absoluted'
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 0
+  m_headerColor: {r: 1, g: 0.4, b: 0, a: 1}
+  m_customNodeCategory: _Math Utils
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 

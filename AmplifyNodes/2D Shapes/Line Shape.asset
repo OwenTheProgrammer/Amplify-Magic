@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Line Shape
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.2.2\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19202\nNode;AmplifyShaderEditor.CommentaryNode;34;624,176;Inherit;False;657;259;SDF
+    Output;5;32;28;30;33;31;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;20;144,496;Inherit;False;404;204;Local
+    directionality quadrants;2;19;18;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;14;-66,174;Inherit;False;649;251;Signed
+    distance;4;0;15;12;13;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;10;-480,-256;Inherit;False;462;268;2D
+    derivation of line segment;4;11;9;8;7;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;6;-1024,-128;Inherit;False;485.5;336;Set
+    Origin to Point A;5;1;2;3;4;5;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.SimpleSubtractOpNode;5;-720,32;Inherit;False;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.DotProductOpNode;7;-432,-208;Inherit;False;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.DotProductOpNode;8;-432,-112;Inherit;False;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleDivideOpNode;9;-304,-208;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;3;-976,-80;Inherit;False;UV;2;0;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionInput;1;-976,0;Inherit;False;Point
+    A;2;1;False;1;0;FLOAT2;0.25,0.25;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionInput;2;-976,80;Inherit;False;Point
+    B;2;2;False;1;0;FLOAT2;0.5,0.75;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SaturateNode;11;-192,-208;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleSubtractOpNode;4;-720,-80;Inherit;False;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.StepOpNode;18;192,544;Inherit;False;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionNode;31;832,320;Inherit;False;Step
+    AA;-1;;1;24f870e76e3994645804ac57fd15d832;0;2;1;FLOAT;0;False;2;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;33;1072,320;Inherit;False;False;-1;Line
+    Mask (AA);2;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;19;304,544;Inherit;False;False;-1;Voronoi
+    Quadrants;3;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionInput;30;656,352;Inherit;False;Line
+    Width;1;3;False;1;0;FLOAT;0.025;False;1;FLOAT;0\nNode;AmplifyShaderEditor.StepOpNode;28;848,224;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;32;960,224;Inherit;False;False;-1;Line
+    Mask;1;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;13;-32,256;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionOutput;0;432,320;Inherit;False;True;-1;Distance;0;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleSubtractOpNode;12;128,240;Inherit;False;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.LengthOpNode;15;304,240;Inherit;False;1;0;FLOAT2;0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.TextureCoordinatesNode;36;-1280,-80;Inherit;False;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nWireConnection;5;0;2;0\nWireConnection;5;1;1;0\nWireConnection;7;0;4;0\nWireConnection;7;1;5;0\nWireConnection;8;0;5;0\nWireConnection;8;1;5;0\nWireConnection;9;0;7;0\nWireConnection;9;1;8;0\nWireConnection;3;0;36;0\nWireConnection;11;0;9;0\nWireConnection;4;0;3;0\nWireConnection;4;1;1;0\nWireConnection;18;0;13;0\nWireConnection;18;1;4;0\nWireConnection;31;1;15;0\nWireConnection;31;2;30;0\nWireConnection;33;0;31;0\nWireConnection;19;0;18;0\nWireConnection;28;0;15;0\nWireConnection;28;1;30;0\nWireConnection;32;0;28;0\nWireConnection;13;0;11;0\nWireConnection;13;1;5;0\nWireConnection;0;0;15;0\nWireConnection;12;0;4;0\nWireConnection;12;1;13;0\nWireConnection;15;0;12;0\nASEEND*/\n//CHKSM=3739D0FD79542EFA75C3E81FB9854988D1064C42"
+  m_functionName: 
+  m_description: Returns the Signed Distance to a line defined by points A and B.
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 0
+  m_headerColor: {r: 1, g: 0.4, b: 0, a: 1}
+  m_customNodeCategory: _2D Shapes
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 

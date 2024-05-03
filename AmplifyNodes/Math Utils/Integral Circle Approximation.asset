@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Integral Circle Approximation
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.2.2\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19202\nNode;AmplifyShaderEditor.CommentaryNode;49;144,-16;Inherit;False;149;184;Sum
+    of integrals;1;48;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;47;-651,-320;Inherit;False;666;302;hiTerm:
+    High frequency derivative (cos^2);7;45;46;39;43;44;40;15;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;38;-576,0;Inherit;False;592;292;loTerm:
+    Low frequency derivative (cos);6;37;29;31;30;36;13;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;28;-368,304;Inherit;False;383;218;xTerm:
+    Base integral derivative (first order);3;27;26;35;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;25;-816,304;Inherit;False;436;304;LightFactor:
+    Increase dx w.r.t integration domain size;4;24;23;9;11;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;22;-1184,304;Inherit;False;354;153;Square
+    the domain size;2;17;21;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;15;-416,-176;Inherit;False;191;126;1
+    / (32 * PI);1;14;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;13;-368,144;Inherit;False;194;129;1
+    / (4 * PI);1;12;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;11;-800,448;Inherit;False;193;133;5
+    / 8;1;10;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;9;-592,448;Inherit;False;193;139;3
+    / 8;1;8;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.RangedFloatNode;8;-576,496;Inherit;False;Constant;_X_DERIV;X_DERIV;0;0;Create;True;0;0;0;False;0;False;0.375;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;24;-496,352;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.GetLocalVarNode;35;-336,352;Inherit;False;32;dom_x;1;0;OBJECT;;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SaturateNode;26;-304,432;Inherit;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;27;-144,352;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.RangedFloatNode;12;-352,192;Inherit;False;Constant;_PI_INV_A;PI_INV_A;0;0;Create;True;0;0;0;False;0;False;0.07957747;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;36;-560,48;Inherit;False;32;dom_x;1;0;OBJECT;;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;31;-384,48;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SinOpNode;29;-240,48;Inherit;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;37;-128,48;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.TauNode;30;-496,128;Inherit;False;0;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;14;-384,-128;Inherit;False;Constant;_PI_INV_B;PI_INV_B;0;0;Create;True;0;0;0;False;0;False;0.009947184;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.PiNode;40;-624,-192;Inherit;False;1;0;FLOAT;4;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;44;-624,-272;Inherit;False;32;dom_x;1;0;OBJECT;;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;43;-416,-272;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SinOpNode;39;-256,-272;Inherit;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;46;-128,-272;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.RangedFloatNode;45;-592,-112;Inherit;False;Constant;_Float0;Float
+    0;0;0;Create;True;0;0;0;False;0;False;4;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;48;160,32;Inherit;False;3;3;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;2;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.RangedFloatNode;10;-784,496;Inherit;False;Constant;_DERIV_REM;DERIV_REM;0;0;Create;True;0;0;0;False;0;False;0.625;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;23;-736,352;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;21;-976,352;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionInput;17;-1152,352;Inherit;False;Domain
+    Width;2;1;True;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FWidthOpNode;19;-1328,352;Inherit;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.TextureCoordinatesNode;18;-1600,32;Inherit;False;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.FunctionInput;16;-1296,32;Inherit;False;UV;2;0;True;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;32;-1152,32;Inherit;False;dom_x;-1;True;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionOutput;0;320,32;Inherit;False;True;-1;F(x,y);0;True;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nWireConnection;24;0;23;0\nWireConnection;24;1;8;0\nWireConnection;26;0;24;0\nWireConnection;27;0;35;0\nWireConnection;27;1;26;0\nWireConnection;31;0;36;0\nWireConnection;31;1;30;0\nWireConnection;29;0;31;0\nWireConnection;37;0;29;0\nWireConnection;37;1;12;0\nWireConnection;40;0;45;0\nWireConnection;43;0;44;0\nWireConnection;43;1;40;0\nWireConnection;39;0;43;0\nWireConnection;46;0;39;0\nWireConnection;46;1;14;0\nWireConnection;48;0;46;0\nWireConnection;48;1;37;0\nWireConnection;48;2;27;0\nWireConnection;23;0;21;0\nWireConnection;23;1;10;0\nWireConnection;21;0;17;0\nWireConnection;21;1;17;0\nWireConnection;17;0;19;0\nWireConnection;19;0;18;0\nWireConnection;16;0;18;0\nWireConnection;32;0;16;0\nWireConnection;0;0;48;0\nASEEND*/\n//CHKSM=C9BE74CA470EF1CF1E9B6A8D600C86C174F818BA"
+  m_functionName: 
+  m_description: 'Anti derivative of pow(cos(pi * x), 4)
+
+    used for dots and stuff'
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 0
+  m_headerColor: {r: 1, g: 0.4, b: 0, a: 1}
+  m_customNodeCategory: _Math Utils
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 

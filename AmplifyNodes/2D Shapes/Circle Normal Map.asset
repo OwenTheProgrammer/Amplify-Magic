@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Circle Normal Map
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.2.2\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19202\nNode;AmplifyShaderEditor.CommentaryNode;29;-1552,208;Inherit;False;768;226;Offset
+    and scale;5;1;27;30;2;25;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;17;-114,46;Inherit;False;484;515;Cull
+    outside of circle;4;15;16;5;4;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;14;-528,192;Inherit;False;340;187;Normal
+    Right, Forward:;2;7;8;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;13;-672,384;Inherit;False;492;172;Normal
+    UP: 1 - 2 * (x^2+y^2);3;9;11;12;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;12;-512,432;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;11;-640,464;Inherit;False;Constant;_Float2;Float
+    2;0;0;Create;True;0;0;0;False;0;False;2;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.OneMinusNode;9;-352,432;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;7;-336,256;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.RangedFloatNode;8;-480,272;Inherit;False;Constant;_Float1;Float
+    1;0;0;Create;True;0;0;0;False;0;False;0.5;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;5;-64,160;Float;False;Constant;_sqrt05025;sqrt(0.5)
+    -> 0.25;0;0;Create;True;0;0;0;False;0;False;0.25;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.Compare;4;192,96;Inherit;False;4;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT4;0,0,0,0;False;3;COLOR;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.ColorNode;16;-64,352;Inherit;False;Constant;_NormalZColour;Normal
+    Z+ Colour;0;0;Create;True;0;0;0;False;0;False;0.5019608,0.5019608,1,0;0,0,0,0;False;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.DynamicAppendNode;15;0,224;Inherit;False;FLOAT4;4;0;FLOAT2;0,0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;1;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.DynamicAppendNode;22;672,64;Inherit;False;FLOAT4;4;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.FunctionOutput;0;816,64;Inherit;True;True;-1;Circle
+    Normal;0;True;1;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.GammaToLinearNode;19;448,64;Inherit;False;0;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.SwizzleNode;24;512,128;Inherit;False;FLOAT;3;1;2;3;1;0;FLOAT4;0,0,0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.DotProductOpNode;3;-672,96;Inherit;False;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.TextureCoordinatesNode;2;-1504,256;Inherit;False;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.FunctionInput;1;-1280,256;Inherit;False;UV;2;0;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionInput;27;-1280,352;Inherit;False;Position;2;1;False;1;0;FLOAT2;0.5,0.5;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleSubtractOpNode;30;-1104,256;Inherit;False;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionInput;25;-1104,352;Inherit;False;Scale;1;2;False;1;0;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleDivideOpNode;31;-912,256;Inherit;False;2;0;FLOAT2;0,0;False;1;FLOAT;0;False;1;FLOAT2;0\nWireConnection;12;0;3;0\nWireConnection;12;1;11;0\nWireConnection;9;0;12;0\nWireConnection;7;0;31;0\nWireConnection;7;1;8;0\nWireConnection;4;0;3;0\nWireConnection;4;1;5;0\nWireConnection;4;2;15;0\nWireConnection;4;3;16;0\nWireConnection;15;0;7;0\nWireConnection;15;2;9;0\nWireConnection;22;0;19;0\nWireConnection;22;3;24;0\nWireConnection;0;0;22;0\nWireConnection;19;0;4;0\nWireConnection;24;0;4;0\nWireConnection;3;0;31;0\nWireConnection;3;1;31;0\nWireConnection;1;0;2;0\nWireConnection;30;0;1;0\nWireConnection;30;1;27;0\nWireConnection;31;0;30;0\nWireConnection;31;1;25;0\nASEEND*/\n//CHKSM=4FCB5DCD588C37E66EC071BDE7BD24013F1532F1"
+  m_functionName: 
+  m_description: Generates a normal map of a circle.
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 0
+  m_headerColor: {r: 1, g: 0.4, b: 0, a: 1}
+  m_customNodeCategory: _2D Shapes
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 

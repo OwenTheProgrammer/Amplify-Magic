@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Grid Anti Aliased
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.2.2\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19202\nNode;AmplifyShaderEditor.CommentaryNode;89;-992,608;Inherit;False;1076;643;Integral
+    definition;15;79;80;85;86;81;74;73;63;65;75;64;77;90;91;93;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;59;672,608;Inherit;False;484;187;Combination
+    of inverse integrals;3;57;56;58;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;55;96,592;Inherit;False;548;403;FTC;4;52;53;54;51;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;26;-1904,-256;Inherit;False;756;339;Texture
+    coordinate construction;6;2;1;22;23;24;25;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;9;-1088,-544;Inherit;False;681;227;Grid
+    ratio;5;30;7;8;5;62;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;20;-608,-176;Inherit;False;A;-1;True;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;21;-608,-96;Inherit;False;B;-1;True;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.TextureCoordinatesNode;2;-1856,-208;Inherit;False;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;24;-1456,-208;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;25;-1296,-208;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.RangedFloatNode;8;-1040,-416;Inherit;False;Constant;_Float0;Float
+    0;0;0;Create;True;0;0;0;False;0;False;0.01;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.OneMinusNode;5;-1040,-496;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;14;-608,-256;Inherit;False;dom_size;-1;True;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;30;-624,-496;Inherit;False;grid_ratio;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMaxOpNode;7;-880,-496;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.ReciprocalOpNode;62;-768,-496;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;23;-1616,-32;Inherit;False;Offset;2;3;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;17;-1136,-208;Inherit;False;texCoord;-1;True;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.GetLocalVarNode;52;144,816;Inherit;False;30;grid_ratio;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;53;144,896;Inherit;False;14;dom_size;1;0;OBJECT;;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;54;320,816;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.BreakToComponentsNode;56;864,672;Inherit;False;FLOAT2;1;0;FLOAT2;0,0;False;16;FLOAT;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT;5;FLOAT;6;FLOAT;7;FLOAT;8;FLOAT;9;FLOAT;10;FLOAT;11;FLOAT;12;FLOAT;13;FLOAT;14;FLOAT;15\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;58;976,672;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;0;1200,672;Inherit;True;True;-1;Output;0;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.OneMinusNode;57;704,672;Inherit;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleDivideOpNode;51;496,656;Inherit;False;2;0;FLOAT2;0,0;False;1;FLOAT2;1,1;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FloorOpNode;85;-448,944;Inherit;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.GetLocalVarNode;86;-928,944;Inherit;False;20;A;1;0;OBJECT;;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SaturateNode;91;-464,1024;Inherit;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;79;-608,1024;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FractNode;80;-720,1024;Inherit;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.GetLocalVarNode;81;-784,1104;Inherit;False;30;grid_ratio;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionNode;92;-912,-208;Inherit;False;Get
+    UV Analytic Model;-1;;4;51bdfc256fc6b5849b80c6ccb32cf166;0;1;1;FLOAT2;0,0;False;3;FLOAT2;0;FLOAT2;15;FLOAT2;16\nNode;AmplifyShaderEditor.GetLocalVarNode;64;-944,656;Inherit;False;21;B;1;0;OBJECT;;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FloorOpNode;63;-432,656;Inherit;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FractNode;73;-720,736;Inherit;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.GetLocalVarNode;75;-784,816;Inherit;False;30;grid_ratio;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;74;-608,736;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SaturateNode;90;-464,736;Inherit;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;65;-320,656;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleSubtractOpNode;77;-208,656;Inherit;False;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleSubtractOpNode;93;-64,656;Inherit;False;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionInput;1;-1616,-208;Inherit;False;UV;2;0;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionInput;22;-1616,-112;Inherit;False;Tiling;2;2;False;1;0;FLOAT2;4,4;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionInput;3;-1296,-496;Inherit;False;Grid
+    Coverage;1;1;False;1;0;FLOAT;0.9;False;1;FLOAT;0\nWireConnection;20;0;92;15\nWireConnection;21;0;92;16\nWireConnection;24;0;1;0\nWireConnection;24;1;22;0\nWireConnection;25;0;24;0\nWireConnection;25;1;23;0\nWireConnection;5;0;3;0\nWireConnection;14;0;92;0\nWireConnection;30;0;62;0\nWireConnection;7;0;5;0\nWireConnection;7;1;8;0\nWireConnection;62;0;7;0\nWireConnection;17;0;25;0\nWireConnection;54;0;52;0\nWireConnection;54;1;53;0\nWireConnection;56;0;57;0\nWireConnection;58;0;56;0\nWireConnection;58;1;56;1\nWireConnection;0;0;58;0\nWireConnection;57;0;51;0\nWireConnection;51;0;93;0\nWireConnection;51;1;54;0\nWireConnection;85;0;86;0\nWireConnection;91;0;79;0\nWireConnection;79;0;80;0\nWireConnection;79;1;81;0\nWireConnection;80;0;86;0\nWireConnection;92;1;17;0\nWireConnection;63;0;64;0\nWireConnection;73;0;64;0\nWireConnection;74;0;73;0\nWireConnection;74;1;75;0\nWireConnection;90;0;74;0\nWireConnection;65;0;63;0\nWireConnection;65;1;90;0\nWireConnection;77;0;65;0\nWireConnection;77;1;85;0\nWireConnection;93;0;77;0\nWireConnection;93;1;91;0\nWireConnection;1;0;2;0\nASEEND*/\n//CHKSM=4405B6FE33B442002707DC3253AE844512B94ECF"
+  m_functionName: 
+  m_description: A procedural grid generator with anti aliasing.
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 0
+  m_headerColor: {r: 1, g: 0.4, b: 0, a: 1}
+  m_customNodeCategory: _2D Shapes
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 

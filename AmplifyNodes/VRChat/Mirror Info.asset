@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Mirror Info
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.2.2\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19202\nNode;AmplifyShaderEditor.CommentaryNode;5;-498,78;Inherit;False;628;235;Rendering
+    normally, not in a mirror;3;2;3;4;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.RangedFloatNode;1;-752,-48;Float;False;Global;_VRChatMirrorMode;_VRChatMirrorMode;0;1;[HideInInspector];Create;True;0;0;0;False;1;uniform;False;0;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;4;-448,192;Inherit;False;Constant;_MIRRORTYPE_NONE;MIRRORTYPE_NONE;0;0;Create;True;0;0;0;False;0;False;0;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.Compare;2;-240,128;Inherit;False;0;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CommentaryNode;6;-496,336;Inherit;False;628;235;Rendering
+    in a mirror viewed in VR;3;9;8;7;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.Compare;9;-240,384;Inherit;False;0;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;8;-448,448;Inherit;False;Constant;_MIRRORTYPE_VR;MIRRORTYPE_VR;0;0;Create;True;0;0;0;False;0;False;1;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.CommentaryNode;10;-496,592;Inherit;False;669;232;Rendering
+    in a mirror viewed in VR;3;12;13;11;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.Compare;11;-240,640;Inherit;False;0;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;13;-480,704;Inherit;False;Constant;_MIRRORTYPE_DESKTOP;MIRRORTYPE_DESKTOP;0;0;Create;True;0;0;0;False;0;False;2;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;0;-480,-48;Inherit;False;True;-1;Value;0;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.Vector3Node;14;-1072,96;Float;False;Global;_VRChatMirrorCameraPos;_VRChatMirrorCameraPos;0;1;[HideInInspector];Create;True;0;0;0;False;1;uniform;False;0,0,0;0,0,0;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.FunctionOutput;15;-816,96;Inherit;False;False;-1;Mirror
+    Camera Position;4;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionOutput;3;-80,128;Inherit;False;False;-1;[0]
+    Not In Mirror;1;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;7;-80,384;Inherit;False;False;-1;[1]
+    In Mirror (VR);2;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;12;-80,640;Inherit;False;False;-1;[2]
+    In Mirror (Desktop);3;False;1;0;FLOAT;0;False;1;FLOAT;0\nWireConnection;2;0;1;0\nWireConnection;2;1;4;0\nWireConnection;9;0;1;0\nWireConnection;9;1;8;0\nWireConnection;11;0;1;0\nWireConnection;11;1;13;0\nWireConnection;0;0;1;0\nWireConnection;15;0;14;0\nWireConnection;3;0;2;0\nWireConnection;7;0;9;0\nWireConnection;12;0;11;0\nASEEND*/\n//CHKSM=D9C88C8285CB654CDF65DC977CBDB16C1C5C7515"
+  m_functionName: 
+  m_description: Interface to VRChats _VRChatMirrorMode and _VRChatMirrorCameraPos
+    uniform.
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 2
+  m_headerColor: {r: 0.5568628, g: 0.32941177, b: 0.91764706, a: 1}
+  m_customNodeCategory: _VRChat
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 

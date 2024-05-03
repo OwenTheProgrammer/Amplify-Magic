@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Camera Mask
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.2.2\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19202\nNode;AmplifyShaderEditor.CommentaryNode;12;-770,-578;Inherit;False;644;235;Tests
+    for default layer;3;11;8;10;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.IntNode;6;-1104,-752;Inherit;False;Global;_VRChatCameraMask;_VRChatCameraMask;0;1;[HideInInspector];Create;True;0;0;0;False;1;uniform;False;0;0;True;0;1;INT;0\nNode;AmplifyShaderEditor.FunctionNode;3;-1088,-1136;Inherit;False;Camera
+    Mode;-1;;2;2b52c30b734a7fd48b2d0c1b92432d16;0;0;5;FLOAT;18;FLOAT;0;FLOAT;6;FLOAT;11;FLOAT;16\nNode;AmplifyShaderEditor.RangedFloatNode;4;-1088,-960;Float;False;Constant;_RENDERTYPE_NORMAL;RENDERTYPE_NORMAL;0;0;Create;True;0;0;0;False;0;False;0;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;0;-560,-1136;Inherit;False;True;-1;Parameter
+    Available;1;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.Compare;2;-736,-1136;Inherit;False;1;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;11;-368,-528;Inherit;False;False;-1;Layer[0]:
+    Default;2;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.Compare;8;-512,-528;Inherit;False;0;4;0;INT;0;False;1;INT;0;False;2;FLOAT;1;False;3;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.IntNode;10;-720,-496;Inherit;False;Constant;_LAYER_DEFAULT;LAYER_DEFAULT;0;0;Create;True;0;0;0;False;0;False;0;0;False;0;1;INT;0\nNode;AmplifyShaderEditor.CommentaryNode;13;-768,-304;Inherit;False;644;235;Tests
+    for transparentFX;3;16;15;14;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.IntNode;16;-720,-224;Inherit;False;Constant;_LAYER_TRANSFX;LAYER_TRANSFX;0;0;Create;True;0;0;0;False;0;False;1;0;False;0;1;INT;0\nNode;AmplifyShaderEditor.FunctionOutput;14;-368,-256;Inherit;False;False;-1;Layer[1]:
+    TransparentFX;3;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.Compare;15;-512,-256;Inherit;False;0;4;0;INT;0;False;1;INT;0;False;2;FLOAT;1;False;3;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CommentaryNode;17;-811,-48;Inherit;False;687;247;Tests
+    for Ignore Raycast layer;3;18;19;20;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.Compare;20;-512,0;Inherit;False;0;4;0;INT;0;False;1;INT;0;False;2;FLOAT;1;False;3;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.IntNode;18;-752,32;Inherit;False;Constant;_LAYER_IGNORERAYCAST;LAYER_IGNORERAYCAST;0;0;Create;True;0;0;0;False;0;False;2;0;False;0;1;INT;0\nNode;AmplifyShaderEditor.CommentaryNode;21;-816,224;Inherit;False;720;240;Tests
+    for Water layer, which the VRCMirror sits on;2;24;22;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.FunctionOutput;19;-368,0;Inherit;False;False;-1;Layer[2]:
+    Ignore Raycast;4;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.IntNode;24;-752,304;Inherit;False;Constant;_LAYER_WATER;LAYER_WATER;0;0;Create;True;0;0;0;False;0;False;4;0;False;0;1;INT;0\nNode;AmplifyShaderEditor.Compare;22;-512,272;Inherit;False;0;4;0;INT;0;False;1;INT;0;False;2;FLOAT;1;False;3;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CommentaryNode;25;-64,-544;Inherit;False;535;206;Test
+    for UI layer;3;26;28;27;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.FunctionOutput;23;-368,272;Inherit;False;False;-1;Layer[4]:
+    Water | VRCMirror;5;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.IntNode;27;0,-464;Inherit;False;Constant;_LAYER_UI;LAYER_UI;0;0;Create;True;0;0;0;False;0;False;5;0;False;0;1;INT;0\nNode;AmplifyShaderEditor.FunctionOutput;26;288,-496;Inherit;False;False;-1;Layer[5]:
+    UI;6;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CommentaryNode;29;-64,-320;Inherit;False;676;229;Test
+    for Interactive Layer;3;32;30;31;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.Compare;28;144,-496;Inherit;False;0;4;0;INT;0;False;1;INT;0;False;2;FLOAT;1;False;3;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.Compare;31;192,-272;Inherit;False;0;4;0;INT;0;False;1;INT;0;False;2;FLOAT;1;False;3;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.IntNode;30;-48,-240;Inherit;False;Constant;_LAYER_INTERACTIVE;LAYER_INTERACTIVE;0;0;Create;True;0;0;0;False;0;False;8;0;False;0;1;INT;0\nNode;AmplifyShaderEditor.FunctionOutput;32;336,-272;Inherit;False;False;-1;Layer[8]:
+    Interactive;7;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CommentaryNode;33;-64,-80;Inherit;False;676;229;Test
+    for Player Layer (all players except you);3;36;35;34;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.IntNode;35;-48,0;Inherit;False;Constant;_LAYER_PLAYER;LAYER_PLAYER;0;0;Create;True;0;0;0;False;0;False;9;0;False;0;1;INT;0\nNode;AmplifyShaderEditor.FunctionOutput;36;336,-32;Inherit;False;False;-1;Layer[9]:
+    Player (except you);8;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.Compare;34;128,-32;Inherit;False;0;4;0;INT;0;False;1;INT;0;False;2;FLOAT;1;False;3;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CommentaryNode;37;-64,160;Inherit;False;711;222;Test
+    for Local Player Layer (only you);3;39;40;38;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.IntNode;38;-48,240;Inherit;False;Constant;_LAYER_PLAYERLOCAL;LAYER_PLAYERLOCAL;0;0;Create;True;0;0;0;False;0;False;10;0;False;0;1;INT;0\nNode;AmplifyShaderEditor.Compare;40;192,208;Inherit;False;0;4;0;INT;0;False;1;INT;0;False;2;FLOAT;1;False;3;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;39;336,208;Inherit;False;False;-1;Layer[10]:
+    PlayerLocal (only you);9;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CommentaryNode;41;640,-544;Inherit;False;711;222;Test
+    for environment layer;3;44;43;42;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.Compare;43;896,-496;Inherit;False;0;4;0;INT;0;False;1;INT;0;False;2;FLOAT;1;False;3;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.IntNode;42;656,-464;Inherit;False;Constant;_LAYER_ENV;LAYER_ENV;0;0;Create;True;0;0;0;False;0;False;11;0;False;0;1;INT;0\nNode;AmplifyShaderEditor.FunctionOutput;44;1040,-496;Inherit;False;False;-1;Layer[11]:
+    Environment;10;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CommentaryNode;45;640,-304;Inherit;False;711;222;Test
+    for UIMenu layer (menus and nameplates);3;48;47;46;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.FunctionOutput;48;1040,-256;Inherit;False;False;-1;Layer[12]:
+    UiMenu;11;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.IntNode;47;704,-224;Inherit;False;Constant;_LAYER_UIMENU;LAYER_UIMENU;0;0;Create;True;0;0;0;False;0;False;12;0;False;0;1;INT;0\nNode;AmplifyShaderEditor.Compare;46;896,-256;Inherit;False;0;4;0;FLOAT;0;False;1;INT;0;False;2;FLOAT;1;False;3;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CommentaryNode;49;672,-64;Inherit;False;783;218;Test
+    for PickupNoEnviroment layer (Only collides with pickups);3;50;51;52;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.Compare;52;976,-16;Inherit;False;0;4;0;INT;0;False;1;INT;0;False;2;FLOAT;1;False;3;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.IntNode;51;736,16;Inherit;False;Constant;_LAYER_PICKUPNOENV;LAYER_PICKUPNOENV;0;0;Create;True;0;0;0;False;0;False;14;0;False;0;1;INT;0\nNode;AmplifyShaderEditor.FunctionOutput;50;1136,-16;Inherit;False;False;-1;Layer[14]:
+    PickupNoEnvironment;12;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CommentaryNode;53;688,176;Inherit;False;783;218;Test
+    for StereoLeft layer;3;56;55;54;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.IntNode;55;752,256;Inherit;False;Constant;_LAYER_STEREOLEFT;LAYER_STEREOLEFT;0;0;Create;True;0;0;0;False;0;False;15;0;False;0;1;INT;0\nNode;AmplifyShaderEditor.Compare;54;992,224;Inherit;False;0;4;0;INT;0;False;1;INT;0;False;2;FLOAT;1;False;3;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;56;1152,224;Inherit;False;False;-1;Layer[15]:
+    StereoLeft;13;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CommentaryNode;57;688,416;Inherit;False;783;218;Test
+    for StereoRight layer;3;60;59;58;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.Compare;59;992,464;Inherit;False;0;4;0;INT;0;False;1;INT;0;False;2;FLOAT;1;False;3;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;60;1152,464;Inherit;False;False;-1;Layer[16]:
+    StereoRight;14;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.IntNode;58;752,496;Inherit;False;Constant;_LAYER_STEREORIGHT;LAYER_STEREORIGHT;0;0;Create;True;0;0;0;False;0;False;16;0;False;0;1;INT;0\nNode;AmplifyShaderEditor.CommentaryNode;61;-112,480;Inherit;False;783;218;Test
+    for Walkthrough layer (things only players can walk through);3;64;63;62;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.Compare;62;192,528;Inherit;False;0;4;0;INT;0;False;1;INT;0;False;2;FLOAT;1;False;3;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.IntNode;64;-48,560;Inherit;False;Constant;_LAYER_WALKTHROUGH;LAYER_WALKTHROUGH;0;0;Create;True;0;0;0;False;0;False;17;0;False;0;1;INT;0\nNode;AmplifyShaderEditor.FunctionOutput;63;352,528;Inherit;False;False;-1;Layer[17]:
+    Walkthrough;15;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CommentaryNode;65;-928,480;Inherit;False;783;218;Test
+    for MirrorReflection layer;3;68;67;66;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.Compare;66;-624,528;Inherit;False;0;4;0;INT;0;False;1;INT;0;False;2;FLOAT;1;False;3;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.IntNode;67;-864,560;Inherit;False;Constant;_LAYER_MIRRORREFL;LAYER_MIRRORREFL;0;0;Create;True;0;0;0;False;0;False;18;0;False;0;1;INT;0\nNode;AmplifyShaderEditor.FunctionOutput;68;-464,528;Inherit;False;False;-1;Layer[18]:
+    MirrorReflection;16;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;7;-800,-752;Inherit;False;False;-1;Value;0;True;1;0;INT;0;False;1;INT;0\nWireConnection;0;0;2;0\nWireConnection;2;0;3;18\nWireConnection;2;1;4;0\nWireConnection;11;0;8;0\nWireConnection;8;0;6;0\nWireConnection;8;1;10;0\nWireConnection;14;0;15;0\nWireConnection;15;0;6;0\nWireConnection;15;1;16;0\nWireConnection;20;0;6;0\nWireConnection;20;1;18;0\nWireConnection;19;0;20;0\nWireConnection;22;0;6;0\nWireConnection;22;1;24;0\nWireConnection;23;0;22;0\nWireConnection;26;0;28;0\nWireConnection;28;0;6;0\nWireConnection;28;1;27;0\nWireConnection;31;0;6;0\nWireConnection;31;1;30;0\nWireConnection;32;0;31;0\nWireConnection;36;0;34;0\nWireConnection;34;0;6;0\nWireConnection;34;1;35;0\nWireConnection;40;0;6;0\nWireConnection;40;1;38;0\nWireConnection;39;0;40;0\nWireConnection;43;0;6;0\nWireConnection;43;1;42;0\nWireConnection;44;0;43;0\nWireConnection;48;0;46;0\nWireConnection;46;1;47;0\nWireConnection;52;0;6;0\nWireConnection;52;1;51;0\nWireConnection;50;0;52;0\nWireConnection;54;0;6;0\nWireConnection;54;1;55;0\nWireConnection;56;0;54;0\nWireConnection;59;0;6;0\nWireConnection;59;1;58;0\nWireConnection;60;0;59;0\nWireConnection;62;0;6;0\nWireConnection;62;1;64;0\nWireConnection;63;0;62;0\nWireConnection;66;0;6;0\nWireConnection;66;1;67;0\nWireConnection;68;0;66;0\nWireConnection;7;0;6;0\nASEEND*/\n//CHKSM=10993EC711CCE85B5F4A6EA75DA1B2EE86FBF797"
+  m_functionName: 
+  m_description: Returns the culling mask when you have a camera out or taking a
+    screen shot.
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 2
+  m_headerColor: {r: 0.5568628, g: 0.32941177, b: 0.91764706, a: 1}
+  m_customNodeCategory: _VRChat
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: http://vrchat.wikidot.com/worlds:layers
