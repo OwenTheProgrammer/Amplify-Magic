@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Direction to Signed Cube
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.2.2\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19202\nNode;AmplifyShaderEditor.CommentaryNode;24;-994,142;Inherit;False;235;158;Normalize
+    not needed for max;1;23;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;22;-706,-18;Inherit;False;452;291;Tangents
+    of current side;3;20;11;12;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;19;-738,-290;Inherit;False;340;187;Individual
+    side lengths;2;7;8;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;18;-1360,-64;Inherit;False;548;163;Unsigned
+    direction fields;3;17;5;6;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;17;-1312,0;Inherit;False;Direction;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.NormalizeNode;5;-1104,0;Inherit;False;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.AbsOpNode;6;-960,0;Inherit;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RangedFloatNode;3;-1360,-240;Inherit;False;Constant;_Float0;Float
+    0;0;0;Create;True;0;0;0;False;0;False;1;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;2;-1200,-240;Inherit;False;Scale;3;1;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;16;-1056,-240;Inherit;False;Scale;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.SimpleDivideOpNode;7;-688,-240;Inherit;False;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionOutput;8;-576,-240;Inherit;False;False;-1;Tangents;1;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;13;-96,-144;Inherit;False;2;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;21;-288,-144;Inherit;False;17;Direction;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.LengthOpNode;9;-176,32;Inherit;False;1;0;FLOAT3;0,0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;20;-592,32;Inherit;False;16;Scale;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionNode;11;-656,112;Inherit;False;Better
+    Max;-1;;1;0185f4cfc515f87408393a57d069c093;0;3;1;FLOAT2;0,0;False;4;FLOAT3;0,0,0;False;9;FLOAT4;0,0,0,0;False;3;FLOAT;0;FLOAT;8;FLOAT;14\nNode;AmplifyShaderEditor.SimpleDivideOpNode;12;-400,32;Inherit;False;2;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionOutput;0;64,-144;Inherit;False;True;-1;Direction
+    On Cube;0;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionOutput;10;-32,32;Inherit;False;False;-1;Distance;2;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.AbsOpNode;23;-944,192;Inherit;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;1;-1536,0;Inherit;False;Direction;3;0;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.NormalVertexDataNode;14;-1728,0;Inherit;False;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nWireConnection;17;0;1;0\nWireConnection;5;0;17;0\nWireConnection;6;0;5;0\nWireConnection;2;0;3;0\nWireConnection;16;0;2;0\nWireConnection;7;0;16;0\nWireConnection;7;1;6;0\nWireConnection;8;0;7;0\nWireConnection;13;0;21;0\nWireConnection;13;1;12;0\nWireConnection;9;0;12;0\nWireConnection;11;4;23;0\nWireConnection;12;0;20;0\nWireConnection;12;1;11;8\nWireConnection;0;0;13;0\nWireConnection;10;0;9;0\nWireConnection;23;0;17;0\nWireConnection;1;0;14;0\nASEEND*/\n//CHKSM=00CEFEB920FCE0082D96CA502326D759E3032B6C"
+  m_functionName: 
+  m_description: Takes a direction vector and returns where it would hit a cube sitting
+    at origin with scale [-Scale | +Scale]
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 0
+  m_headerColor: {r: 1, g: 0.4, b: 0, a: 1}
+  m_customNodeCategory: _Math Utils
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 
