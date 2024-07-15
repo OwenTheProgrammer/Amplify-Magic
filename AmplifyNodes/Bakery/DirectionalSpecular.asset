@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: DirectionalSpecular
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.5.1\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19501\nNode;AmplifyShaderEditor.CommentaryNode;75;-1264,-112;Inherit;False;760;217;Read
+    lightmap SH data;4;26;16;74;29;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;73;-368,-592;Inherit;False;1316;467;Conditional
+    Output Stage;9;65;66;67;64;68;72;69;71;0;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;63;192,-112;Inherit;False;697.8256;228.9356;GGX
+    Specular;4;59;61;60;62;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;52;-1264,-608;Inherit;False;853;226;Literally
+    just one minus and pow(x, 2);6;57;55;48;51;49;58;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;47;-496,-112;Inherit;False;675;232;Get
+    dot product lighting;5;46;42;41;44;43;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;40;-1264,-368;Inherit;False;884;243;Get
+    halfway direction between light and view;6;32;31;33;34;38;39;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.GetLocalVarNode;65;-320,-368;Inherit;False;16;lmColor;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;66;-320,-304;Inherit;False;62;spec;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;67;-288,-240;Inherit;False;Constant;_Float3;Float
+    3;2;0;Create;True;0;0;0;False;0;False;0.99999;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;64;-112,-368;Inherit;False;3;3;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;2;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;68;32,-368;Inherit;False;fragColor;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.StaticSwitch;69;272,-416;Inherit;False;Property;_Keyword0;Keyword
+    0;2;0;Create;True;0;0;0;False;0;False;0;0;0;False;LIGHTMAP_ON;Toggle;2;Key0;Key1;Fetch;False;True;All;9;1;FLOAT3;0,0,0;False;0;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;4;FLOAT3;0,0,0;False;5;FLOAT3;0,0,0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.NormalizeNode;31;-1040,-320;Inherit;False;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;33;-880,-320;Inherit;False;2;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;34;-1072,-240;Inherit;False;35;viewDir;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.NormalizeNode;38;-768,-320;Inherit;False;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;39;-624,-320;Inherit;False;halfDir;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;32;-1216,-320;Inherit;False;26;lmDir;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionNode;49;-1008,-560;Inherit;False;SmoothnessToPerceptualRoughness;-1;;127;504a050a7ae6ffc49938c854fed29688;0;1;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;51;-672,-560;Inherit;False;perceptualRoughness;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;48;-1184,-560;Inherit;False;37;smoothness;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;55;-1248,-480;Inherit;False;51;perceptualRoughness;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;57;-640,-480;Inherit;False;roughness;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionNode;58;-1008,-480;Inherit;False;PerceptualRoughnessToRoughness;-1;;131;f1523fd1c355aec409461f0ef8f6bf62;0;1;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;1;-1712,-592;Inherit;False;lightmapUV;2;0;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;28;-1536,-592;Inherit;False;lightmapUV;-1;True;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionInput;3;-1712,-448;Inherit;False;normalWorld;3;1;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;36;-1536,-448;Inherit;False;normalWorld;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;4;-1696,-272;Inherit;False;viewDir;3;2;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;35;-1536,-272;Inherit;False;viewDir;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;37;-1536,-96;Inherit;False;smoothness;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;29;-1216,-64;Inherit;False;28;lightmapUV;1;0;OBJECT;;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionNode;74;-1040,-64;Inherit;False;BakeryReadLightmap;0;;139;39c38a94c8dcb364f8c6735db914865e;0;1;19;FLOAT2;0,0;False;2;FLOAT3;0;FLOAT3;23\nNode;AmplifyShaderEditor.RegisterLocalVarNode;16;-720,-64;Inherit;False;lmColor;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;26;-720,0;Inherit;False;lmDir;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;43;-480,16;Inherit;False;39;halfDir;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;44;-480,-64;Inherit;False;36;normalWorld;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.DotProductOpNode;41;-304,-64;Inherit;False;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SaturateNode;42;-192,-64;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;46;-48,-64;Inherit;False;ndotl;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;59;240,-64;Inherit;False;46;ndotl;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionNode;61;432,-48;Inherit;False;GGXTerm;-1;;154;2a0d381eb421fe1429b4ec2966d494b5;0;2;1;FLOAT;0;False;2;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;60;240,16;Inherit;False;57;roughness;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;62;640,-48;Inherit;False;spec;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.StaticSwitch;71;480,-512;Inherit;False;Property;_Keyword0;Keyword
+    0;2;0;Create;True;0;0;0;False;0;False;0;0;0;False;DIRLIGHTMAP_COMBINED;Toggle;2;Key0;Key1;Fetch;False;True;All;9;1;FLOAT3;0,0,0;False;0;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;4;FLOAT3;0,0,0;False;5;FLOAT3;0,0,0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.Vector3Node;72;64,-512;Inherit;False;Constant;_Vector0;Vector
+    0;2;0;Create;True;0;0;0;False;0;False;0,0,0;0,0,0;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.TextureCoordinatesNode;2;-1920,-592;Inherit;False;2;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.WorldNormalVector;6;-1888,-448;Inherit;False;True;1;0;FLOAT3;0,0,1;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.ViewDirInputsCoordNode;8;-1888,-272;Inherit;False;World;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.FunctionInput;5;-1728,-96;Inherit;False;smoothness;1;3;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;76;-1888,-96;Inherit;False;Constant;_Float4;Float
+    4;3;0;Create;True;0;0;0;False;0;False;0.5;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;0;752,-512;Inherit;False;True;-1;color;0;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nWireConnection;64;0;65;0\nWireConnection;64;1;66;0\nWireConnection;64;2;67;0\nWireConnection;68;0;64;0\nWireConnection;69;1;72;0\nWireConnection;69;0;68;0\nWireConnection;31;0;32;0\nWireConnection;33;0;31;0\nWireConnection;33;1;34;0\nWireConnection;38;0;33;0\nWireConnection;39;0;38;0\nWireConnection;49;1;48;0\nWireConnection;51;0;49;0\nWireConnection;57;0;58;0\nWireConnection;58;1;55;0\nWireConnection;1;0;2;0\nWireConnection;28;0;1;0\nWireConnection;3;0;6;0\nWireConnection;36;0;3;0\nWireConnection;4;0;8;0\nWireConnection;35;0;4;0\nWireConnection;37;0;5;0\nWireConnection;74;19;29;0\nWireConnection;16;0;74;0\nWireConnection;26;0;74;23\nWireConnection;41;0;44;0\nWireConnection;41;1;43;0\nWireConnection;42;0;41;0\nWireConnection;46;0;42;0\nWireConnection;61;1;59;0\nWireConnection;61;2;60;0\nWireConnection;62;0;61;0\nWireConnection;71;1;72;0\nWireConnection;71;0;69;0\nWireConnection;5;0;76;0\nWireConnection;0;0;68;0\nASEEND*/\n//CHKSM=AD5638E4BC69E7AF9BDD183254EDDAEA2E7129E7"
+  m_functionName: 
+  m_description: Computes approximate specular from a directional lightmap. color
+    will contain new specular highlights.
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 2
+  m_headerColor: {r: 1, g: 0.4, b: 0, a: 1}
+  m_customNodeCategory: _AmplifyBakery
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 

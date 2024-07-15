@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: BakeryMonoSH
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.5.1\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19501\nNode;AmplifyShaderEditor.CommentaryNode;110;-560,320;Inherit;False;1060;419;Combine
+    terms;8;65;77;74;75;76;101;88;99;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;109;256,-320;Inherit;False;717;288;Calculate
+    SH lumocity parts;5;63;112;62;59;57;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;108;-560,-16;Inherit;False;804.7141;318.8392;Calculate
+    Lightmap Light Contribution;6;107;28;25;40;39;38;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;106;256,-16;Inherit;False;716;323;Calculate
+    illumination terms for each coefficient;7;51;52;113;50;49;48;47;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;104;-560,-320;Inherit;False;805;288;Read
+    the lightmap direction and ambient light;3;24;14;8;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.GetLocalVarNode;8;-512,-272;Inherit;False;6;lightmapUV;1;0;OBJECT;;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;14;0,-272;Inherit;False;L0;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;24;0,-192;Inherit;False;nL1;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;47;304,32;Inherit;False;14;L0;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;48;304,96;Inherit;False;38;L1x;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;49;304,160;Inherit;False;39;L1y;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;50;304,224;Inherit;False;40;L1z;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;38;16,48;Inherit;False;L1x;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;39;16,112;Inherit;False;L1y;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;40;16,176;Inherit;False;L1z;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;25;-512,48;Inherit;False;14;L0;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;28;-512,112;Inherit;False;24;nL1;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionNode;107;-320,48;Inherit;False;BakeryMonoSHLightContribution;-1;;126;2a6fbf7c1b59bbe4ab9f3dddd403f4c1;0;2;10;FLOAT3;0,0,0;False;16;FLOAT3;0,0,0;False;3;FLOAT3;25;FLOAT3;24;FLOAT3;23\nNode;AmplifyShaderEditor.FunctionInput;1;-976,176;Inherit;False;lightmapUV;2;1;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;6;-800,176;Inherit;False;lightmapUV;-1;True;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.GetLocalVarNode;57;288,-272;Inherit;False;51;lumaL0;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;59;288,-192;Inherit;False;52;lumaL1;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;62;288,-112;Inherit;False;5;normalWorld;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionNode;112;512,-272;Inherit;False;SHEvaluateL1Diffuse;-1;;152;cb03ec1d203cc794ea589436fe9c634e;0;3;1;FLOAT;0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;63;752,-272;Inherit;False;lumaSH;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionNode;113;528,80;Inherit;False;BakerySH4Luma;-1;;153;4f0ff00b0365d754f97e3bbb48d698a3;0;4;15;FLOAT3;0,0,0;False;16;FLOAT3;0,0,0;False;17;FLOAT3;0,0,0;False;18;FLOAT3;0,0,0;False;5;FLOAT;14;FLOAT3;25;FLOAT;11;FLOAT;12;FLOAT;13\nNode;AmplifyShaderEditor.RegisterLocalVarNode;52;752,176;Inherit;False;lumaL1;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;51;752,80;Inherit;False;lumaL0;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;65;-512,368;Inherit;False;14;L0;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;77;-512,432;Inherit;False;5;normalWorld;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;74;-512,496;Inherit;False;38;L1x;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;75;-512,560;Inherit;False;39;L1y;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;76;-512,624;Inherit;False;40;L1z;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionNode;101;80,512;Inherit;False;BakeryLumaClamp;-1;;162;28dba4bb5b74d5c459a16a1fb4684a8c;0;2;9;FLOAT;0;False;10;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;88;-144,384;Inherit;False;63;lumaSH;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;99;320,448;Inherit;False;2;2;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RangedFloatNode;98;688,352;Inherit;False;Constant;_Float11;Float
+    11;2;0;Create;True;0;0;0;False;0;False;0;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMaxOpNode;94;688,448;Inherit;False;2;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RangedFloatNode;95;544,512;Inherit;False;Constant;_Float10;Float
+    10;2;0;Create;True;0;0;0;False;0;False;0;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;2;-976,16;Inherit;False;worldNormal;3;0;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;5;-800,16;Inherit;False;normalWorld;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionNode;114;-240,448;Inherit;False;CombineSHTerms;43;;178;124a618a874896e41b8c77520dbff84b;0;5;15;FLOAT3;0,0,0;False;16;FLOAT3;0,0,0;False;17;FLOAT3;0,0,0;False;23;FLOAT3;0,0,0;False;24;FLOAT3;0,0,0;False;2;FLOAT3;0;FLOAT;33\nNode;AmplifyShaderEditor.FunctionNode;115;-336,-272;Inherit;False;BakeryReadLightmap;0;;186;39c38a94c8dcb364f8c6735db914865e;0;1;19;FLOAT2;0,0;False;2;FLOAT3;0;FLOAT3;23\nNode;AmplifyShaderEditor.TextureCoordinatesNode;3;-1184,176;Inherit;False;2;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.WorldNormalVector;4;-1152,16;Inherit;False;True;1;0;FLOAT3;0,0,1;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.StaticSwitch;97;1104,352;Inherit;True;Property;_DIRLIGHTMAP_COMBINED;DIRLIGHTMAP_COMBINED;2;0;Create;True;0;0;0;False;0;False;0;0;0;False;DIRLIGHTMAP_COMBINED;Toggle;2;Key0;Key1;Fetch;False;True;All;9;1;FLOAT3;0,0,0;False;0;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;4;FLOAT3;0,0,0;False;5;FLOAT3;0,0,0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.StaticSwitch;96;880,432;Inherit;True;Property;_Keyword0;Keyword
+    0;2;0;Create;True;0;0;0;False;0;False;0;0;0;False;LIGHTMAP_ON;Toggle;2;Key0;Key1;Fetch;False;True;All;9;1;FLOAT3;0,0,0;False;0;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;4;FLOAT3;0,0,0;False;5;FLOAT3;0,0,0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionOutput;0;1376,352;Inherit;True;True;-1;MonoSH;0;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nWireConnection;14;0;115;0\nWireConnection;24;0;115;23\nWireConnection;38;0;107;25\nWireConnection;39;0;107;24\nWireConnection;40;0;107;23\nWireConnection;107;10;25;0\nWireConnection;107;16;28;0\nWireConnection;1;0;3;0\nWireConnection;6;0;1;0\nWireConnection;112;1;57;0\nWireConnection;112;2;59;0\nWireConnection;112;3;62;0\nWireConnection;63;0;112;0\nWireConnection;113;15;47;0\nWireConnection;113;16;48;0\nWireConnection;113;17;49;0\nWireConnection;113;18;50;0\nWireConnection;52;0;113;25\nWireConnection;51;0;113;14\nWireConnection;101;9;88;0\nWireConnection;101;10;114;33\nWireConnection;99;0;114;0\nWireConnection;99;1;101;0\nWireConnection;94;0;99;0\nWireConnection;94;1;95;0\nWireConnection;2;0;4;0\nWireConnection;5;0;2;0\nWireConnection;114;15;65;0\nWireConnection;114;16;77;0\nWireConnection;114;17;74;0\nWireConnection;114;23;75;0\nWireConnection;114;24;76;0\nWireConnection;115;19;8;0\nWireConnection;97;1;98;0\nWireConnection;97;0;94;0\nWireConnection;96;1;98;0\nWireConnection;96;0;94;0\nWireConnection;0;0;94;0\nASEEND*/\n//CHKSM=791108980786028DF8310835FCC82F9BECA313F8"
+  m_functionName: 
+  m_description: Samples Bakery MonoSH lightmaps. SH will contain new diffuse lighting.
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 0
+  m_headerColor: {r: 1, g: 0.4, b: 0, a: 1}
+  m_customNodeCategory: _AmplifyBakery
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 

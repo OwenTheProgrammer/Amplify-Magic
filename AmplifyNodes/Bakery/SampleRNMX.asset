@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: SampleRNMX
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.5.1\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19501\nNode;AmplifyShaderEditor.FunctionInput;11;-1344,-304;Inherit;False;lightmapUV;2;0;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.TextureCoordinatesNode;12;-1552,-304;Inherit;False;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.RegisterLocalVarNode;13;-1168,-304;Inherit;False;lightmapUV;-1;True;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SamplerNode;3;-416,-528;Inherit;True;Property;_TextureSample8;Texture
+    Sample 8;1;0;Create;True;0;0;0;False;0;False;-1;None;None;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;6;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT3;5\nNode;AmplifyShaderEditor.TexturePropertyNode;2;-672,-528;Inherit;True;Global;_RNM0;_RNM0;2;0;Fetch;True;0;0;0;True;0;False;None;None;False;white;LockedToTexture2D;Texture2D;-1;0;2;SAMPLER2D;0;SAMPLERSTATE;1\nNode;AmplifyShaderEditor.GetLocalVarNode;8;-640,-336;Inherit;False;13;lightmapUV;1;0;OBJECT;;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionNode;14;-128,-528;Inherit;False;BakeryDecodeLightmap
+    RNM;0;;1;aef82ca31360dac4f9340ec54a2d24cb;0;1;1;FLOAT4;0,0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.SamplerNode;4;-416,-240;Inherit;True;Property;_TextureSample9;Texture
+    Sample 9;1;0;Create;True;0;0;0;False;0;False;-1;None;None;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;6;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT3;5\nNode;AmplifyShaderEditor.TexturePropertyNode;5;-672,-240;Inherit;True;Global;_RNM1;_RNM1;2;0;Fetch;True;0;0;0;True;0;False;None;None;False;white;LockedToTexture2D;Texture2D;-1;0;2;SAMPLER2D;0;SAMPLERSTATE;1\nNode;AmplifyShaderEditor.GetLocalVarNode;9;-640,-48;Inherit;False;13;lightmapUV;1;0;OBJECT;;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SamplerNode;6;-416,48;Inherit;True;Property;_TextureSample10;Texture
+    Sample 10;1;0;Create;True;0;0;0;False;0;False;-1;None;None;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;6;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT3;5\nNode;AmplifyShaderEditor.TexturePropertyNode;7;-672,48;Inherit;True;Global;_RNM2;_RNM2;2;0;Fetch;True;0;0;0;True;0;False;None;None;False;white;LockedToTexture2D;Texture2D;-1;0;2;SAMPLER2D;0;SAMPLERSTATE;1\nNode;AmplifyShaderEditor.GetLocalVarNode;10;-640,240;Inherit;False;13;lightmapUV;1;0;OBJECT;;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionNode;17;-128,-240;Inherit;False;BakeryDecodeLightmap
+    RNM;0;;91;aef82ca31360dac4f9340ec54a2d24cb;0;1;1;FLOAT4;0,0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionNode;18;-128,48;Inherit;False;BakeryDecodeLightmap
+    RNM;0;;99;aef82ca31360dac4f9340ec54a2d24cb;0;1;1;FLOAT4;0,0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionOutput;16;160,48;Inherit;True;False;-1;RNM2
+    (Z basis vector);2;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionOutput;15;160,-240;Inherit;True;False;-1;RNM1
+    (Y basis vector);1;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionOutput;0;160,-528;Inherit;True;True;-1;RNM0
+    (X basis vector);0;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nWireConnection;11;0;12;0\nWireConnection;13;0;11;0\nWireConnection;3;0;2;0\nWireConnection;3;1;8;0\nWireConnection;14;1;3;0\nWireConnection;4;0;5;0\nWireConnection;4;1;9;0\nWireConnection;6;0;7;0\nWireConnection;6;1;10;0\nWireConnection;17;1;4;0\nWireConnection;18;1;6;0\nWireConnection;16;0;18;0\nWireConnection;15;0;17;0\nWireConnection;0;0;14;0\nASEEND*/\n//CHKSM=7BD0579273DC0030517FE1FBE898B5F66694F8F5"
+  m_functionName: 
+  m_description: Allows you to sample Bakery's Radiosity Normal Maps or RNM maps
+    from 0-3.
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 0
+  m_headerColor: {r: 1, g: 0.4, b: 0, a: 1}
+  m_customNodeCategory: _AmplifyBakery
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 

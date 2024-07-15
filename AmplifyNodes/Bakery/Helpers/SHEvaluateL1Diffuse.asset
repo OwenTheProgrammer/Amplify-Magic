@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: SHEvaluateL1Diffuse
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.5.1\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19501\nNode;AmplifyShaderEditor.CommentaryNode;64;720,0;Inherit;False;676;547;SH
+    Gradient;10;56;57;58;60;59;54;55;61;62;63;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;53;-240,256;Inherit;False;932;419;dynamic
+    range constant (4 = highly directional, 0 = ambient);9;46;47;48;49;52;44;43;50;51;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;41;-240,-256;Inherit;False;824;237;power
+    of phi (lerp(1, 3, directionality));8;42;39;38;37;36;40;34;35;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;27;-240,0;Inherit;False;934;236;Linear
+    angle between normal and direction [0|1];8;28;26;22;21;20;25;24;19;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;18;-864,16;Inherit;False;612;163;directional
+    brightness;3;16;14;17;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;13;-864,-224;Inherit;False;612;227;Average
+    the direction of incoming light;4;9;11;10;12;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.RangedFloatNode;9;-784,-176;Inherit;False;Constant;_Float0;Float
+    0;0;0;Create;True;0;0;0;False;0;False;0.5;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;11;-816,-112;Inherit;False;7;L1;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;10;-640,-176;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;12;-496,-176;Inherit;False;R1;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.LengthOpNode;16;-640,64;Inherit;False;1;0;FLOAT3;0,0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;14;-816,64;Inherit;False;12;R1;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;17;-496,64;Inherit;False;lenR1;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;36;112,-208;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;37;0,-112;Inherit;False;Constant;_Float2;Float
+    2;0;0;Create;True;0;0;0;False;0;False;2;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;38;256,-208;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;39;160,-112;Inherit;False;Constant;_Float3;Float
+    3;0;0;Create;True;0;0;0;False;0;False;1;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;42;368,-208;Inherit;False;power;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;35;-192,-208;Inherit;False;17;lenR1;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;34;-192,-128;Inherit;False;6;L0;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleDivideOpNode;40;0,-208;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;46;-192,400;Inherit;False;17;lenR1;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;47;-192,480;Inherit;False;6;L0;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleDivideOpNode;48;-16,400;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleDivideOpNode;49;336,400;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;52;448,400;Inherit;False;a_const;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleSubtractOpNode;44;160,368;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;50;176,464;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;1;-624,256;Inherit;False;L0;1;0;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;3;-624,416;Inherit;False;n;3;2;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.TextureCoordinatesNode;4;-848,256;Inherit;False;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.RegisterLocalVarNode;8;-480,416;Inherit;False;n;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;7;-480,336;Inherit;False;L1;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;2;-624,336;Inherit;False;L1;3;1;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.WorldNormalVector;5;-832,416;Inherit;False;False;1;0;FLOAT3;0,0,1;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.RegisterLocalVarNode;6;-480,256;Inherit;False;L0;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.DotProductOpNode;19;112,48;Inherit;False;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.NormalizeNode;24;-48,48;Inherit;False;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;25;-224,48;Inherit;False;12;R1;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;20;224,48;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;21;368,48;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;22;224,144;Inherit;False;Constant;_Float1;Float
+    1;0;0;Create;True;0;0;0;False;0;False;0.5;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;26;-80,128;Inherit;False;8;n;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;28;480,48;Inherit;False;phi;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.OneMinusNode;56;960,128;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;57;784,128;Inherit;False;52;a_const;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;58;784,208;Inherit;False;42;power;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;60;816,288;Inherit;False;Constant;_Float6;Float
+    6;0;0;Create;True;0;0;0;False;0;False;1;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;59;992,208;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;55;928,48;Inherit;False;6;L0;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.PowerNode;61;960,368;Inherit;False;False;2;0;FLOAT;0;False;1;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;62;768,432;Inherit;False;42;power;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;63;768,368;Inherit;False;28;phi;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;54;1216,144;Inherit;False;4;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;43;-48,320;Inherit;False;Constant;_Float4;Float
+    4;0;0;Create;True;0;0;0;False;0;False;1;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;51;-48,544;Inherit;False;Constant;_Float5;Float
+    5;0;0;Create;True;0;0;0;False;0;False;1;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;0;1408,144;Inherit;True;True;-1;Output;0;False;1;0;FLOAT;0;False;1;FLOAT;0\nWireConnection;10;0;9;0\nWireConnection;10;1;11;0\nWireConnection;12;0;10;0\nWireConnection;16;0;14;0\nWireConnection;17;0;16;0\nWireConnection;36;0;40;0\nWireConnection;36;1;37;0\nWireConnection;38;0;36;0\nWireConnection;38;1;39;0\nWireConnection;42;0;38;0\nWireConnection;40;0;35;0\nWireConnection;40;1;34;0\nWireConnection;48;0;46;0\nWireConnection;48;1;47;0\nWireConnection;49;0;44;0\nWireConnection;49;1;50;0\nWireConnection;52;0;49;0\nWireConnection;44;0;43;0\nWireConnection;44;1;48;0\nWireConnection;50;0;48;0\nWireConnection;50;1;51;0\nWireConnection;1;0;4;1\nWireConnection;3;0;5;0\nWireConnection;8;0;3;0\nWireConnection;7;0;2;0\nWireConnection;2;0;5;0\nWireConnection;6;0;1;0\nWireConnection;19;0;24;0\nWireConnection;19;1;26;0\nWireConnection;24;0;25;0\nWireConnection;20;0;19;0\nWireConnection;20;1;22;0\nWireConnection;21;0;20;0\nWireConnection;21;1;22;0\nWireConnection;28;0;21;0\nWireConnection;56;0;57;0\nWireConnection;59;0;58;0\nWireConnection;59;1;60;0\nWireConnection;61;0;63;0\nWireConnection;61;1;62;0\nWireConnection;54;0;55;0\nWireConnection;54;1;56;0\nWireConnection;54;2;59;0\nWireConnection;54;3;61;0\nWireConnection;0;0;54;0\nASEEND*/\n//CHKSM=D1FCDDB446EE5DF8231233C848ABFA96F935B453"
+  m_functionName: 
+  m_description: 'Evaluates the diffusivity of the L1 coefficients for a Spherical
+    Harmonic
+
+    known internally "shEvaluateDiffuseL1Geomerics"'
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 0
+  m_headerColor: {r: 1, g: 0.4, b: 0, a: 1}
+  m_customNodeCategory: _AmplifyBakery
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 
