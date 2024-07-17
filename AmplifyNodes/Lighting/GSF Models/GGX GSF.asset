@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: GGX GSF
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.5.1\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19501\nNode;AmplifyShaderEditor.CommentaryNode;23;-946,-66;Inherit;False;809.4663;331;SmithL
+    SmithV;9;14;16;21;15;17;19;18;20;22;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;11;-1280,-224;Inherit;False;308;187;NdotV
+    but absolute?;2;9;10;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.WorldSpaceLightDirHlpNode;5;-1904,-432;Inherit;False;False;1;0;FLOAT;0;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.FunctionInput;1;-1696,-432;Inherit;False;Light
+    Direction;3;1;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;2;-1696,-288;Inherit;False;View
+    Direction;3;2;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.ViewDirInputsCoordNode;6;-1872,-288;Inherit;False;World;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.FunctionInput;3;-1696,-144;Inherit;False;World
+    Normal;3;0;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.WorldNormalVector;7;-1872,-144;Inherit;False;True;1;0;FLOAT3;0,0,1;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.FunctionNode;8;-1280,-432;Inherit;True;NdotL;-1;;1;cb780e012a734b5418e5b98d881e0121;0;2;1;FLOAT3;0,0,0;False;4;FLOAT3;0,0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.DotProductOpNode;9;-1232,-160;Inherit;False;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.AbsOpNode;10;-1120,-160;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;12;-1488,0;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.OneMinusNode;14;-896,-16;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;16;-736,-16;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;21;-736,128;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;15;-592,-16;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleDivideOpNode;17;-464,-16;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleDivideOpNode;19;-464,128;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;18;-592,128;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.OneMinusNode;20;-896,128;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;22;-314.5337,39.54468;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;13;-1664,80;Inherit;False;Constant;_Float1;Float
+    1;0;0;Create;True;0;0;0;False;0;False;0.5;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;4;-1696,0;Inherit;False;Roughness;1;3;False;1;0;FLOAT;0.5;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;0;-128,48;Inherit;True;True;-1;Output;0;False;1;0;FLOAT;0;False;1;FLOAT;0\nWireConnection;1;0;5;0\nWireConnection;2;0;6;0\nWireConnection;3;0;7;0\nWireConnection;8;1;3;0\nWireConnection;8;4;1;0\nWireConnection;9;0;2;0\nWireConnection;9;1;3;0\nWireConnection;10;0;9;0\nWireConnection;12;0;4;0\nWireConnection;12;1;13;0\nWireConnection;14;0;12;0\nWireConnection;16;0;8;0\nWireConnection;16;1;14;0\nWireConnection;21;0;10;0\nWireConnection;21;1;20;0\nWireConnection;15;0;16;0\nWireConnection;15;1;12;0\nWireConnection;17;0;8;0\nWireConnection;17;1;15;0\nWireConnection;19;0;10;0\nWireConnection;19;1;18;0\nWireConnection;18;0;21;0\nWireConnection;18;1;12;0\nWireConnection;20;0;12;0\nWireConnection;22;0;17;0\nWireConnection;22;1;19;0\nWireConnection;0;0;22;0\nASEEND*/\n//CHKSM=F97DD523945A084D6C6C4F710C7ABB85D2FB092F"
+  m_functionName: 
+  m_description: Calculates the GGX Geometric Shadow Function or "GSF"
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 0
+  m_headerColor: {r: 1, g: 0.4, b: 0, a: 1}
+  m_customNodeCategory: _ShadowFunctions
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 

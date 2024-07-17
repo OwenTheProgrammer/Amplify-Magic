@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: SHEvalLinearL2
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.5.1\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19501\nNode;AmplifyShaderEditor.CommentaryNode;42;-1392,384;Inherit;False;916;323;Combine
+    Harmonic Polynomial Terms;7;36;39;37;38;41;40;13;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;35;-1392,80;Inherit;False;1012;283;Final
+    (5th) quadratic (L2) polynomial;7;29;31;32;30;33;28;34;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;27;-1394,-626;Inherit;False;1268;707;4
+    of the quadratic (L2) polynomials;12;4;3;2;19;20;18;17;15;16;21;23;25;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.DynamicAppendNode;1;-1792,-576;Inherit;False;FLOAT4;4;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.NormalizeNode;9;-1936,-576;Inherit;False;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;10;-2080,-576;Inherit;False;Normal;3;0;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RangedFloatNode;11;-2080,-512;Inherit;False;Constant;_Float0;Float
+    0;0;0;Create;True;0;0;0;False;0;False;1;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.WorldNormalVector;12;-2272,-576;Inherit;False;True;1;0;FLOAT3;0,0,1;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.RegisterLocalVarNode;24;-1648,-576;Inherit;False;normal;-1;True;1;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.Vector4Node;4;-1024,-448;Inherit;False;Global;unity_SHBr;unity_SHBr;0;0;Fetch;True;0;0;0;False;0;False;0,0,0,0;0,0,0,0;0;5;FLOAT4;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.Vector4Node;3;-1024,-288;Inherit;False;Global;unity_SHBg;unity_SHBg;0;0;Fetch;True;0;0;0;False;0;False;0,0,0,0;0,0,0,0;0;5;FLOAT4;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.DotProductOpNode;19;-672,-480;Inherit;False;2;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0,0,0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.DotProductOpNode;20;-672,-384;Inherit;False;2;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0,0,0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.DotProductOpNode;18;-672,-576;Inherit;False;2;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0,0,0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;17;-960,-576;Inherit;False;2;2;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.SwizzleNode;15;-1152,-576;Inherit;False;FLOAT4;0;1;2;2;1;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.SwizzleNode;16;-1152,-512;Inherit;False;FLOAT4;1;2;2;0;1;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.DynamicAppendNode;21;-512,-576;Inherit;False;FLOAT3;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;23;-368,-576;Inherit;False;x1;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;25;-1344,-576;Inherit;False;24;normal;1;0;OBJECT;;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.SwizzleNode;29;-1120,144;Inherit;False;FLOAT;0;1;2;3;1;0;FLOAT4;0,0,0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;31;-944,144;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;32;-944,240;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SwizzleNode;30;-1120,240;Inherit;False;FLOAT;1;1;2;3;1;0;FLOAT4;0,0,0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleSubtractOpNode;33;-768,176;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;28;-1344,176;Inherit;False;24;normal;1;0;OBJECT;;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;34;-624,176;Inherit;False;vC;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.Vector4Node;2;-1024,-128;Inherit;False;Global;unity_SHBb;unity_SHBb;0;0;Fetch;True;0;0;0;False;0;False;0,0,0,0;0,0,0,0;0;5;FLOAT4;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.Vector4Node;36;-1344,432;Inherit;False;Global;unity_SHC;unity_SHC;0;0;Fetch;True;0;0;0;False;0;False;0,0,0,0;0,0,0,1;0;5;FLOAT4;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.GetLocalVarNode;39;-1312,592;Inherit;False;34;vC;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SwizzleNode;37;-1136,432;Inherit;False;FLOAT3;0;1;2;3;1;0;FLOAT4;0,0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;38;-992,432;Inherit;False;2;2;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;41;-1024,528;Inherit;False;23;x1;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;40;-848,432;Inherit;False;2;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionOutput;13;-720,432;Inherit;True;True;-1;Spherical
+    Harmonics;0;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nWireConnection;1;0;9;0\nWireConnection;1;3;11;0\nWireConnection;9;0;10;0\nWireConnection;10;0;12;0\nWireConnection;24;0;1;0\nWireConnection;19;0;17;0\nWireConnection;19;1;3;0\nWireConnection;20;0;17;0\nWireConnection;20;1;2;0\nWireConnection;18;0;17;0\nWireConnection;18;1;4;0\nWireConnection;17;0;15;0\nWireConnection;17;1;16;0\nWireConnection;15;0;25;0\nWireConnection;16;0;25;0\nWireConnection;21;0;18;0\nWireConnection;21;1;19;0\nWireConnection;21;2;20;0\nWireConnection;23;0;21;0\nWireConnection;29;0;28;0\nWireConnection;31;0;29;0\nWireConnection;31;1;29;0\nWireConnection;32;0;30;0\nWireConnection;32;1;30;0\nWireConnection;30;0;28;0\nWireConnection;33;0;31;0\nWireConnection;33;1;32;0\nWireConnection;34;0;33;0\nWireConnection;37;0;36;0\nWireConnection;38;0;37;0\nWireConnection;38;1;39;0\nWireConnection;40;0;38;0\nWireConnection;40;1;41;0\nWireConnection;13;0;40;0\nASEEND*/\n//CHKSM=7C3FEBDD77844E4C7C3E711E85EEA0FB81576F2E"
+  m_functionName: 
+  m_description: Evaluates the Spherical Harmonics of the L2 coefficients in linear
+    space.
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 0
+  m_headerColor: {r: 1, g: 0.4, b: 0, a: 1}
+  m_customNodeCategory: _LightingFunctions
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 

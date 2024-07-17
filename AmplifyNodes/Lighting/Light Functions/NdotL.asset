@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: NdotL
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.5.1\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19501\nNode;AmplifyShaderEditor.CommentaryNode;9;-864,-144;Inherit;False;372;259;N
+    dot L;3;8;6;7;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.WorldSpaceLightDirHlpNode;5;-1408,48;Inherit;False;True;1;0;FLOAT;0;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.RangedFloatNode;8;-816,0;Inherit;False;Constant;_Float0;Float
+    0;0;0;Create;True;0;0;0;False;0;False;0;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.DotProductOpNode;6;-784,-96;Inherit;False;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMaxOpNode;7;-640,-96;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;1;-1152,-96;Inherit;False;Normal;3;0;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;4;-1184,48;Inherit;False;Light
+    Direction;3;1;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.WorldNormalVector;2;-1376,-96;Inherit;False;True;1;0;FLOAT3;0,0,1;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.FunctionOutput;0;-256,-96;Inherit;True;True;-1;NdotL;0;True;1;0;FLOAT;0;False;1;FLOAT;0\nWireConnection;6;0;1;0\nWireConnection;6;1;4;0\nWireConnection;7;0;6;0\nWireConnection;7;1;8;0\nWireConnection;1;0;2;0\nWireConnection;4;0;5;0\nWireConnection;0;0;7;0\nASEEND*/\n//CHKSM=D90FC7F85AA85BC3D9A53600CE8C1BA257D6E5AA"
+  m_functionName: 
+  m_description: 'Implements the Lambertian coefficient of intensity.
+
+
+    Commonly
+    known as "NdotL" for its argument wise Normal dot product with Light direction
+    or dot(NormalDir, LightDir)
+
+
+    Returns the light intensity of a surface given
+    its face direction and light direction, as a 0-1 value.'
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 0
+  m_headerColor: {r: 1, g: 0.4, b: 0, a: 1}
+  m_customNodeCategory: _LightingFunctions
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 

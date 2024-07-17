@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: TrowbridgeReitz NDF
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.5.1\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19501\nNode;AmplifyShaderEditor.CommentaryNode;52;-703,-352;Inherit;False;899;267;Calculate
+    Illumination Distribution;8;51;50;49;44;45;46;47;48;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;1;-800,-80;Inherit;False;477;264;Specular;5;56;57;54;55;53;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;3;-1408,-80;Inherit;False;592;305;Square
+    the terms;6;31;21;20;41;43;42;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;4;-1408,-352;Inherit;False;699;263;Half
+    vector light direction;5;17;16;15;14;13;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.ViewDirInputsCoordNode;5;-2128,-336;Inherit;False;World;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.RegisterLocalVarNode;6;-1728,-336;Inherit;False;viewDir;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.WorldSpaceLightDirHlpNode;7;-2160,-192;Inherit;False;False;1;0;FLOAT;0;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.FunctionInput;8;-1920,-192;Inherit;False;Light
+    Direction;3;1;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;9;-1728,-192;Inherit;False;lightDir;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;10;-1920,-336;Inherit;False;View
+    Direction;3;2;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.WorldNormalVector;11;-2128,-48;Inherit;False;False;1;0;FLOAT3;0,0,1;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.RegisterLocalVarNode;12;-1728,-48;Inherit;False;worldNormal;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;13;-1392,-240;Inherit;False;9;lightDir;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;14;-1392,-176;Inherit;False;12;worldNormal;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;15;-1392,-304;Inherit;False;6;viewDir;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;16;-944,-256;Inherit;False;NdotH;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionNode;17;-1184,-256;Inherit;False;NdotH;-1;;5;6a242299ade6f8d468164a66cd1bff4e;0;3;12;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;4;FLOAT3;0,0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;18;-1920,-48;Inherit;False;World
+    Normal;3;0;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;19;-1728,112;Inherit;False;roughness;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;20;-1360,-16;Inherit;False;19;roughness;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;21;-1184,-16;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;31;-1040,-16;Inherit;False;roughnessSqr;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;42;-1168,80;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;41;-1360,80;Inherit;False;16;NdotH;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;43;-1040,80;Inherit;False;NdotHSqr;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;48;-656,-224;Inherit;False;31;roughnessSqr;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;47;-592,-160;Inherit;False;Constant;_Float0;Float
+    0;0;0;Create;True;0;0;0;False;0;False;1;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleSubtractOpNode;46;-448,-224;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;45;-304,-304;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;44;-624,-304;Inherit;False;43;NdotHSqr;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;49;-160,-304;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;50;-304,-208;Inherit;False;Constant;_Float1;Float
+    1;0;0;Create;True;0;0;0;False;0;False;1;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;51;-48,-304;Inherit;False;distribution;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;53;-784,32;Inherit;False;51;distribution;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.PiNode;55;-784,96;Inherit;False;1;0;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;54;-608,32;Inherit;False;3;3;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;57;-672,-32;Inherit;False;31;roughnessSqr;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleDivideOpNode;56;-448,-32;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;30;-1920,112;Inherit;False;Roughness;1;3;False;1;0;FLOAT;0.5;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;40;-288,-32;Inherit;True;True;-1;Specular;0;False;1;0;FLOAT;0;False;1;FLOAT;0\nWireConnection;6;0;10;0\nWireConnection;8;0;7;0\nWireConnection;9;0;8;0\nWireConnection;10;0;5;0\nWireConnection;12;0;18;0\nWireConnection;16;0;17;0\nWireConnection;17;12;14;0\nWireConnection;17;2;15;0\nWireConnection;17;4;13;0\nWireConnection;18;0;11;0\nWireConnection;19;0;30;0\nWireConnection;21;0;20;0\nWireConnection;21;1;20;0\nWireConnection;31;0;21;0\nWireConnection;42;0;41;0\nWireConnection;42;1;41;0\nWireConnection;43;0;42;0\nWireConnection;46;0;48;0\nWireConnection;46;1;47;0\nWireConnection;45;0;44;0\nWireConnection;45;1;46;0\nWireConnection;49;0;45;0\nWireConnection;49;1;50;0\nWireConnection;51;0;49;0\nWireConnection;54;0;53;0\nWireConnection;54;1;53;0\nWireConnection;54;2;55;0\nWireConnection;56;0;57;0\nWireConnection;56;1;54;0\nWireConnection;40;0;56;0\nASEEND*/\n//CHKSM=19D38740CA0C461DCE85F7A0EDFC6E8853379EC8"
+  m_functionName: 
+  m_description: Implements the Trowbridge-Reitz Normal Distribution Function.
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 0
+  m_headerColor: {r: 1, g: 0.4, b: 0, a: 1}
+  m_customNodeCategory: _LightingModels
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 

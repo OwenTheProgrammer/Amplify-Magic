@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Phong NDF
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.5.1\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19501\nNode;AmplifyShaderEditor.CommentaryNode;12;-1632,-336;Inherit;False;1067;288;Distribution;9;25;24;23;13;1;7;2;11;8;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;27;-1392,-32;Inherit;False;659;319;Specular
+    Attenuation;7;34;33;32;31;30;29;28;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.SimpleMaxOpNode;6;-1904,48;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;9;-1760,144;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;40;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;15;-2112,-192;Inherit;False;Normal
+    Direction;3;1;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.WorldNormalVector;18;-2288,-192;Inherit;False;True;1;0;FLOAT3;0,0,1;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.ViewDirInputsCoordNode;19;-2288,-48;Inherit;False;World;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.FunctionInput;16;-2080,-48;Inherit;False;View
+    Direction;3;2;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;20;-1904,-336;Inherit;False;lightDir;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;21;-1904,-192;Inherit;False;normalDir;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;22;-1904,-48;Inherit;False;viewDir;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;14;-2080,-336;Inherit;False;Light
+    Direction;3;0;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.WorldSpaceLightDirHlpNode;17;-2320,-336;Inherit;False;False;1;0;FLOAT;0;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;8;-912,-256;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;11;-944,-160;Inherit;False;10;power;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.PowerNode;2;-1088,-256;Inherit;False;False;2;0;FLOAT;0;False;1;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;13;-768,-256;Inherit;False;distribution;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;23;-1600,-288;Inherit;False;20;lightDir;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;24;-1600,-224;Inherit;False;21;normalDir;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;25;-1600,-160;Inherit;False;22;viewDir;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;3;-2048,48;Inherit;False;Glossiness;1;3;False;1;0;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionNode;1;-1392,-256;Inherit;False;RdotV;-1;;1;1c8e1a20e5d571e458d4792b880f8a1e;0;3;4;FLOAT3;0,0,0;False;5;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;7;-1120,-160;Inherit;False;4;gloss;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;4;-1616,144;Inherit;False;gloss;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;10;-1616,48;Inherit;False;power;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;28;-1344,96;Inherit;False;10;power;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;29;-1168,96;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;30;-1200,192;Inherit;False;Constant;_Float1;Float
+    1;0;0;Create;True;0;0;0;False;0;False;2;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;31;-1040,96;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;32;-1072,192;Inherit;False;Constant;_INV_TAU;INV_TAU;0;0;Create;True;0;0;0;False;0;False;0.1591549;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;33;-1072,16;Inherit;False;13;distribution;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;34;-896,16;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;0;-704,16;Inherit;True;True;-1;Specular;0;True;1;0;FLOAT;0;False;1;FLOAT;0\nWireConnection;6;0;3;0\nWireConnection;9;0;6;0\nWireConnection;15;0;18;0\nWireConnection;16;0;19;0\nWireConnection;20;0;14;0\nWireConnection;21;0;15;0\nWireConnection;22;0;16;0\nWireConnection;14;0;17;0\nWireConnection;8;0;2;0\nWireConnection;8;1;11;0\nWireConnection;2;0;1;0\nWireConnection;2;1;7;0\nWireConnection;13;0;8;0\nWireConnection;1;4;23;0\nWireConnection;1;5;24;0\nWireConnection;1;3;25;0\nWireConnection;4;0;9;0\nWireConnection;10;0;6;0\nWireConnection;29;0;28;0\nWireConnection;29;1;30;0\nWireConnection;31;0;29;0\nWireConnection;31;1;32;0\nWireConnection;34;0;33;0\nWireConnection;34;1;31;0\nWireConnection;0;0;34;0\nASEEND*/\n//CHKSM=2EE6395A2BD2A86F4B1DB5A78E6F102448FF1109"
+  m_functionName: 
+  m_description: Implements the Phong Normal Distribution Function Model.
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 0
+  m_headerColor: {r: 1, g: 0.4, b: 0, a: 1}
+  m_customNodeCategory: _LightingModels
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 

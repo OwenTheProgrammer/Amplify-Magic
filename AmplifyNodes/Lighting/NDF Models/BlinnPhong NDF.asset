@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: BlinnPhong NDF
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.5.1\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19501\nNode;AmplifyShaderEditor.CommentaryNode;39;-1312,-240;Inherit;False;699;263;Half
+    vector light direction;4;17;15;16;14;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;38;-544,-240;Inherit;False;659;319;Specular
+    Attenuation;7;37;32;30;36;35;34;33;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;26;-1312,32;Inherit;False;737;236;Calculate
+    Distribution;6;25;23;24;22;21;20;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.ViewDirInputsCoordNode;3;-2032,-224;Inherit;False;World;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.RegisterLocalVarNode;4;-1632,-224;Inherit;False;viewDir;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.WorldSpaceLightDirHlpNode;6;-2064,-80;Inherit;False;False;1;0;FLOAT;0;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.FunctionInput;5;-1824,-80;Inherit;False;Light
+    Direction;3;1;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;7;-1632,-80;Inherit;False;lightDir;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;2;-1824,-224;Inherit;False;View
+    Direction;3;2;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.WorldNormalVector;9;-2032,64;Inherit;False;False;1;0;FLOAT3;0,0,1;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.RegisterLocalVarNode;10;-1632,64;Inherit;False;worldNormal;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.PowerNode;20;-1120,80;Inherit;False;False;2;0;FLOAT;0;False;1;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;21;-1296,80;Inherit;False;17;NdotH;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;22;-1296,144;Inherit;False;19;gloss;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;24;-1120,176;Inherit;False;18;power;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;23;-928,80;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;25;-784,80;Inherit;False;distribution;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;14;-1296,-128;Inherit;False;7;lightDir;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;16;-1296,-64;Inherit;False;10;worldNormal;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;15;-1296,-192;Inherit;False;4;viewDir;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;17;-848,-144;Inherit;False;NdotH;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;18;-1632,224;Inherit;False;power;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;19;-1632,320;Inherit;False;gloss;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionNode;49;-1088,-144;Inherit;False;NdotH;-1;;5;6a242299ade6f8d468164a66cd1bff4e;0;3;12;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;4;FLOAT3;0,0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;8;-1824,64;Inherit;False;World
+    Normal;3;0;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;11;-2096,224;Inherit;False;Glossiness;1;3;False;1;0;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMaxOpNode;41;-1952,224;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;47;-1792,320;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;40;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;33;-496,-112;Inherit;False;18;power;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;34;-320,-112;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;35;-352,-16;Inherit;False;Constant;_Float1;Float
+    1;0;0;Create;True;0;0;0;False;0;False;2;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;36;-192,-112;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;30;-224,-16;Inherit;False;Constant;_INV_TAU;INV_TAU;0;0;Create;True;0;0;0;False;0;False;0.1591549;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;32;-224,-192;Inherit;False;25;distribution;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;37;-48,-192;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;0;160,-192;Inherit;True;True;-1;Specular;0;True;1;0;FLOAT;0;False;1;FLOAT;0\nWireConnection;4;0;2;0\nWireConnection;5;0;6;0\nWireConnection;7;0;5;0\nWireConnection;2;0;3;0\nWireConnection;10;0;8;0\nWireConnection;20;0;21;0\nWireConnection;20;1;22;0\nWireConnection;23;0;20;0\nWireConnection;23;1;24;0\nWireConnection;25;0;23;0\nWireConnection;17;0;49;0\nWireConnection;18;0;41;0\nWireConnection;19;0;47;0\nWireConnection;49;12;16;0\nWireConnection;49;2;15;0\nWireConnection;49;4;14;0\nWireConnection;8;0;9;0\nWireConnection;41;0;11;0\nWireConnection;47;0;41;0\nWireConnection;34;0;33;0\nWireConnection;34;1;35;0\nWireConnection;36;0;34;0\nWireConnection;36;1;30;0\nWireConnection;37;0;32;0\nWireConnection;37;1;36;0\nWireConnection;0;0;37;0\nASEEND*/\n//CHKSM=FEAEF366B92C7040F193030AFB440DEE28BBAA8F"
+  m_functionName: 
+  m_description: Implements the Blinn-Phong Normal Distribution Function Model.
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 0
+  m_headerColor: {r: 1, g: 0.4, b: 0, a: 1}
+  m_customNodeCategory: _LightingModels
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 

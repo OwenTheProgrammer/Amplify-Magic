@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: SchlickFresnell
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.5.1\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19501\nNode;AmplifyShaderEditor.CommentaryNode;13;-1136,-208;Inherit;False;516;243;Fresnel
+    Function;4;9;10;11;12;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.FunctionInput;4;-1696,-368;Inherit;False;Specular
+    Colour;5;0;False;1;0;COLOR;0,0,0,0;False;1;COLOR;0\nNode;AmplifyShaderEditor.FunctionNode;1;-1408,-192;Inherit;False;LdotH;-1;;1;029a79e49804cb24b98d704c052c9b9f;0;2;1;FLOAT3;0,0,0;False;4;FLOAT3;0,0,0;False;1;FLOAT;7\nNode;AmplifyShaderEditor.FunctionInput;3;-1696,-176;Inherit;False;View
+    Direction;3;2;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;2;-1696,-32;Inherit;False;Light
+    Direction;3;1;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.OneMinusNode;9;-1088,-160;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SaturateNode;10;-944,-160;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.PowerNode;11;-800,-160;Inherit;False;False;2;0;FLOAT;0;False;1;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;12;-944,-80;Inherit;False;Constant;_Float1;Float
+    1;0;0;Create;True;0;0;0;False;0;False;5;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.OneMinusNode;8;-704,-288;Inherit;False;1;0;COLOR;0,0,0,0;False;1;COLOR;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;14;-560,-288;Inherit;False;2;2;0;COLOR;0,0,0,0;False;1;FLOAT;0;False;1;COLOR;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;15;-416,-368;Inherit;False;2;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0\nNode;AmplifyShaderEditor.ViewDirInputsCoordNode;7;-1920,-176;Inherit;False;World;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.WorldSpaceLightDirHlpNode;6;-1952,-32;Inherit;False;True;1;0;FLOAT;0;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.ColorNode;5;-1904,-368;Inherit;False;Constant;_Color0;Color
+    0;0;0;Create;True;0;0;0;False;0;False;0.4086863,0.3116768,0.6415094,1;0,0,0,0;True;True;0;6;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT3;5\nNode;AmplifyShaderEditor.FunctionOutput;0;-304,-368;Inherit;True;True;-1;Schlick
+    Fresnel;0;True;1;0;COLOR;0,0,0,0;False;1;COLOR;0\nWireConnection;4;0;5;0\nWireConnection;1;1;3;0\nWireConnection;1;4;2;0\nWireConnection;3;0;7;0\nWireConnection;2;0;6;0\nWireConnection;9;0;1;7\nWireConnection;10;0;9;0\nWireConnection;11;0;10;0\nWireConnection;11;1;12;0\nWireConnection;8;0;4;0\nWireConnection;14;0;8;0\nWireConnection;14;1;11;0\nWireConnection;15;0;4;0\nWireConnection;15;1;14;0\nWireConnection;0;0;15;0\nASEEND*/\n//CHKSM=200752A9566A2DA5CA3F5A5736150B3EB19D8E8D"
+  m_functionName: 
+  m_description: Implements the Schlick Fresnel function
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 0
+  m_headerColor: {r: 1, g: 0.4, b: 0, a: 1}
+  m_customNodeCategory: _LightingFunctions
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 
