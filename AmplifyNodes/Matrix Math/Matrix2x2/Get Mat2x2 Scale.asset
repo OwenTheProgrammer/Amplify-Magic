@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Get Mat2x2 Scale
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.5.1\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19501\nNode;AmplifyShaderEditor.FunctionInput;2;-928,-32;Inherit;False;Matrix2x2;4;0;False;1;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.FunctionNode;12;-1152,-32;Inherit;False;Mat2x2
+    Identity;-1;;4;63a67a8ae86d7544ba2bf09b543bd74c;0;0;1;FLOAT4;0\nNode;AmplifyShaderEditor.FunctionNode;15;-768,-32;Inherit;False;Mat2x2
+    Get Column;-1;;7;5f9923ab78714454b9ce45167b777f27;0;1;1;FLOAT4;0,0,0,0;False;2;FLOAT2;0;FLOAT2;2\nNode;AmplifyShaderEditor.LengthOpNode;7;-480,-48;Inherit;False;1;0;FLOAT2;0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.LengthOpNode;8;-480,32;Inherit;False;1;0;FLOAT2;0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.DynamicAppendNode;9;-272,-48;Inherit;False;FLOAT2;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionNode;17;-96,48;Inherit;False;As
+    Scalar Mat2x2;-1;;16;245e42edb63dcd14aad89adc671e0ebe;0;1;1;FLOAT2;1,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.FunctionOutput;14;160,48;Inherit;True;False;-1;Scalar
+    (Matrix Form);1;False;1;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.FunctionOutput;0;-96,-144;Inherit;True;True;-1;Scalar
+    Term;0;True;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nWireConnection;2;0;12;0\nWireConnection;15;1;2;0\nWireConnection;7;0;15;0\nWireConnection;8;0;15;2\nWireConnection;9;0;7;0\nWireConnection;9;1;8;0\nWireConnection;17;1;9;0\nWireConnection;14;0;17;0\nWireConnection;0;0;9;0\nASEEND*/\n//CHKSM=445A2CA06F4DB0D5DD5483C1B03A0B401B3B12F1"
+  m_functionName: 
+  m_description: Gets Matrix2x2's scale factor IE the amount the matrix scales your
+    values in x,y
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 0
+  m_headerColor: {r: 1, g: 0.4, b: 0, a: 1}
+  m_customNodeCategory: _Matrix Math
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 

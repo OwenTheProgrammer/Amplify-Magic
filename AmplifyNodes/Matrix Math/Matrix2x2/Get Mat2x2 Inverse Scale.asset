@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Get Mat2x2 Inverse Scale
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.5.1\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19501\nNode;AmplifyShaderEditor.FunctionNode;2;-1008,-80;Inherit;False;Mat2x2
+    Identity;-1;;1;63a67a8ae86d7544ba2bf09b543bd74c;0;0;1;FLOAT4;0\nNode;AmplifyShaderEditor.FunctionInput;1;-800,-80;Inherit;False;Matrix2x2;4;0;False;1;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.FunctionNode;3;-624,-80;Inherit;False;Get
+    Mat2x2 Scale;-1;;2;6366d3d80b4bf684c916ec67971d5524;0;1;2;FLOAT4;0,0,0,0;False;2;FLOAT2;0;FLOAT4;14\nNode;AmplifyShaderEditor.ReciprocalOpNode;4;-304,-80;Inherit;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionNode;5;-128,16;Inherit;False;As
+    Scalar Mat2x2;-1;;20;245e42edb63dcd14aad89adc671e0ebe;0;1;1;FLOAT2;1,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.FunctionOutput;0;-48,-80;Inherit;False;True;-1;1/Scale;0;True;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionOutput;6;112,16;Inherit;False;False;-1;Inverse
+    Scale Matrix;1;False;1;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nWireConnection;1;0;2;0\nWireConnection;3;2;1;0\nWireConnection;4;0;3;0\nWireConnection;5;1;4;0\nWireConnection;0;0;4;0\nWireConnection;6;0;5;0\nASEEND*/\n//CHKSM=6081F5728DD23CC4348096F48D8F49646B6FC356"
+  m_functionName: 
+  m_description: Calculates the "undo-scale" term or just 1/scale of the matrix.
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 0
+  m_headerColor: {r: 1, g: 0.4, b: 0, a: 1}
+  m_customNodeCategory: _Matrix Math
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 

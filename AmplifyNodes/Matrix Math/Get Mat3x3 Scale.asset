@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
-  m_Name: Get Matrix Scale
+  m_Name: Get Mat3x3 Scale
   m_EditorClassIdentifier: 
   m_functionInfo: "// Made with Amplify Shader Editor v1.9.2.2\n// Available at the
     Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19202\nNode;AmplifyShaderEditor.FunctionInput;2;-720,0;Inherit;False;Matrix;6;0;False;1;0;FLOAT3x3;0,0,0,0,1,0,0,0,1;False;1;FLOAT3x3;0\nNode;AmplifyShaderEditor.VectorFromMatrixNode;3;-400,-128;Inherit;False;Column;0;1;0;FLOAT3x3;1,0,0,0,1,0,0,0,1;False;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.VectorFromMatrixNode;4;-400,16;Inherit;False;Column;1;1;0;FLOAT3x3;1,0,0,1,0,0,1,0,1;False;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.VectorFromMatrixNode;5;-400,192;Inherit;False;Column;2;1;0;FLOAT3x3;1,0,0,0,0,1,1,0,1;False;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.LengthOpNode;6;-192,-128;Inherit;False;1;0;FLOAT3;0,0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.LengthOpNode;8;-192,192;Inherit;False;1;0;FLOAT3;0,0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.LengthOpNode;7;-192,16;Inherit;False;1;0;FLOAT3;0,0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.DynamicAppendNode;9;61.5,16;Inherit;False;FLOAT3;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionOutput;0;224,16;Inherit;False;True;-1;Matrix
