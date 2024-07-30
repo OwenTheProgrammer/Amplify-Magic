@@ -1,2 +1,172 @@
 # $\forall\text{mplify Magic}$
 A curation of some nodes I make when I'm bored. Feel free to use them however you'd like! and I'd love to see what you come up with :3
+
+Node count: 139
+
+# Nodes
+
+## 2D Shapes
+- [Circle Shape](/Documentation/2D%20Shapes/2D%20Shapes.md#CircleShape)
+- [Square Shape](/Documentation/2D%20Shapes/2D%20Shapes.md#SquareShape)
+- [Line Shape](/Documentation/2D%20Shapes/2D%20Shapes.md#LineShape)
+- [Combine SDFs](/Documentation/2D%20Shapes/2D%20Shapes.md#CombineSDFs)
+- [Realize SDF](/Documentation/2D%20Shapes/2D%20Shapes.md#RealizeSDF)
+- [Make Annular](/Documentation/2D%20Shapes/2D%20Shapes.md#MakeAnnular)
+- [Round Out Shape](/Documentation/2D%20Shapes/2D%20Shapes.md#RoundOutShape)
+- [Grid Anti Aliased](/Documentation/2D%20Shapes/2D%20Shapes.md#GridAntiAliased)
+- [Checkers Anti Aliased](/Documentation/2D%20Shapes/2D%20Shapes.md#CheckersAntiAliased)
+- [Analytical Dot Matrix](/Documentation/2D%20Shapes/2D%20Shapes.md#AnalyticalDotMatrix)
+- [Circle Normal Map](/Documentation/2D%20Shapes/2D%20Shapes.md#CircleNormalMap)
+
+## Amplify Bakery
+- [Bakery SH](/Documentation/Amplify%20Bakery/AmplifyBakery.md#BakerySH)
+- [Bakery MonoSH](/Documentation/Amplify%20Bakery/AmplifyBakery.md#BakeryMonoSH)
+- [Bakery Specular Mono SH Full](/Documentation/Amplify%20Bakery/AmplifyBakery.md#BakerySpecularMonoSHFull)
+- [Directional Specular](/Documentation/Amplify%20Bakery/AmplifyBakery.md#DirectionalSpecular)
+- [Sample RNMX](/Documentation/Amplify%20Bakery/AmplifyBakery.md#SampleRNMX)
+- [Bakery Lightmap ST](/Documentation/Amplify%20Bakery/AmplifyBakery.md#BakeryLightmapST)
+- [Bakery Read Lightmap](/Documentation/Amplify%20Bakery/AmplifyBakery.md#BakeryReadLightmap)
+- [Bakery Sample SH Matrix](/Documentation/Amplify%20Bakery/AmplifyBakery.md#BakerySampleSHMatrix)
+- [Bakery Decode Lightmap RNM](/Documentation/Amplify%20Bakery/AmplifyBakery.md#BakeryDecodeLightmapRNM)
+- [Bakery SH4 Light Contribution](/Documentation/Amplify%20Bakery/AmplifyBakery.md#BakerySH4LightContribution)
+- [Sample L1](/Documentation/Amplify%20Bakery/AmplifyBakery.md#SampleL1)
+- [SH Evaluate L1 Diffuse](/Documentation/Amplify%20Bakery/AmplifyBakery.md#SHEvaluateL1Diffuse)
+- [Bakery Luma Clamp](/Documentation/Amplify%20Bakery/AmplifyBakery.md#BakeryLumaClamp)
+- [Bakery SH4 Luma](/Documentation/Amplify%20Bakery/AmplifyBakery.md#BakerySH4Luma)
+- [GGX Term](/Documentation/Amplify%20Bakery/AmplifyBakery.md#GGXTerm)
+- [Combine SH Terms](/Documentation/Amplify%20Bakery/AmplifyBakery.md#CombineSHTerms)
+- [Perceptual Roughness to Roughness](/Documentation/Amplify%20Bakery/AmplifyBakery.md#PerceptualRoughnesstoRoughness)
+- [Smoothness To Perceptual Roughness](/Documentation/Amplify%20Bakery/AmplifyBakery.md#SmoothnessToPerceptualRoughness)
+- [Perceptual Roughness to Mipmap Level](/Documentation/Amplify%20Bakery/AmplifyBakery.md#PerceptualRoughnesstoMipmapLevel)
+
+## Coordinate Mapping
+- [Project To Box](/Documentation/Coordinate%20Mapping/CoordinateMapping.md#ProjectToBox)
+- [Project To Square](/Documentation/Coordinate%20Mapping/CoordinateMapping.md#ProjectToSquare)
+- [Rotate UV](/Documentation/Coordinate%20Mapping/CoordinateMapping.md#RotateUV)
+- [ST Remapping](/Documentation/Coordinate%20Mapping/CoordinateMapping.md#STRemapping)
+- [Repeat Domain](/Documentation/Coordinate%20Mapping/CoordinateMapping.md#RepeatDomain)
+- [Point On Circle](/Documentation/Coordinate%20Mapping/CoordinateMapping.md#PointOnCircle)
+- [Spherical Coordinates](/Documentation/Coordinate%20Mapping/CoordinateMapping.md#SphericalCoordinates)
+- [UV To Tunnel](/Documentation/Coordinate%20Mapping/CoordinateMapping.md#UVToTun)
+- [Tunnel To UV](/Documentation/Coordinate%20Mapping/CoordinateMapping.md#TunnelToUV)
+- [UV Bounds Verifier](/Documentation/Coordinate%20Mapping/CoordinateMapping.md#UVBoundsVerifier)
+- [UV Padding](/Documentation/Coordinate%20Mapping/CoordinateMapping.md#UVPadding)
+- [UV Remapping](/Documentation/Coordinate%20Mapping/CoordinateMapping.md#UVRemapping)
+- [Smooth UV Grid](/Documentation/Coordinate%20Mapping/CoordinateMapping.md#SmoothUVGrid)
+- [Sample Pixel In Middle](/Documentation/Coordinate%20Mapping/CoordinateMapping.md#SamplePixelInMiddle)
+- [Smooth Gradual Pixelation](/Documentation/Coordinate%20Mapping/CoordinateMapping.md#SmoothGradualPixelation)
+- [Tilesheet Selector](/Documentation/Coordinate%20Mapping/CoordinateMapping.md#TilesheetSelector)
+
+## Extensions
+- [Min Index 2](/Documentation/Extensions/Extensions.md#MinIndex2)
+- [Min Index 3](/Documentation/Extensions/Extensions.md#MinIndex3)
+- [Generic Min](/Documentation/Extensions/Extensions.md#GenericMin)
+- [Max Index 2](/Documentation/Extensions/Extensions.md#MaxIndex2)
+- [Max Index 3](/Documentation/Extensions/Extensions.md#MaxIndex3)
+- [Generic Max](/Documentation/Extensions/Extensions.md#GenericMax)
+- [Sort 2](/Documentation/Extensions/Extensions.md#Sort2)
+- [Sort 3](/Documentation/Extensions/Extensions.md#Sort3)
+- [If Statement](/Documentation/Extensions/Extensions.md#IfStatement)
+- [Value At Index](/Documentation/Extensions/Extensions.md#ValueAtIndex)
+
+## Lighting Functions
+- [N dot L](/Documentation/Lighting%20Functions/LightingFunctions.md#NdotL)
+- [N dot V](/Documentation/Lighting%20Functions/LightingFunctions.md#NdotV)
+- [N dot H](/Documentation/Lighting%20Functions/LightingFunctions.md#NdotH)
+- [L dot V](/Documentation/Lighting%20Functions/LightingFunctions.md#LdotV)
+- [L dot H](/Documentation/Lighting%20Functions/LightingFunctions.md#LdotH)
+- [V dot H](/Documentation/Lighting%20Functions/LightingFunctions.md#VdotH)
+- [R dot V](/Documentation/Lighting%20Functions/LightingFunctions.md#RdotV)
+- [Half Direction](/Documentation/Lighting%20Functions/LightingFunctions.md#HalfDirection)
+- [Reflect Direction](/Documentation/Lighting%20Functions/LightingFunctions.md#ReflectDirection)
+- [ShadeSH9](/Documentation/Lighting%20Functions/LightingFunctions.md#ShadeSH9)
+- [SHEvalLinearL0L1](/Documentation/Lighting%20Functions/LightingFunctions.md#SHEvalLinearL0L1)
+- [SHEvalLinearL2](/Documentation/Lighting%20Functions/LightingFunctions.md#SHEvalLinearL2)
+- [SH Get Basis Vectors](/Documentation/Lighting%20Functions/LightingFunctions.md#SHGetBasisVectors)
+- [Schlick Fresnel](/Documentation/Lighting%20Functions/LightingFunctions.md#SchlickFresnel)
+
+## Lighting Models
+- [Beckmann NDF](/Documentation/Lighting%20Models/LightingModels.md#BeckmannNDF)
+- [Phong NDF](/Documentation/Lighting%20Models/LightingModels.md#PhongNDF)
+- [Blinn-Phong NDF](/Documentation/Lighting%20Models/LightingModels.md#Blinn-PhongNDF)
+- [Gaussian NDF](/Documentation/Lighting%20Models/LightingModels.md#GaussianNDF)
+- [GGX NDF](/Documentation/Lighting%20Models/LightingModels.md#GGXNDF)
+- [GGX Light](/Documentation/Lighting%20Models/LightingModels.md#GGXLight)
+- [Trowbridge-Reitz NDF](/Documentation/Lighting%20Models/LightingModels.md#Trowbridge-ReitzNDF)
+- [Trowbridge-Reitz Anisotropic NDF](/Documentation/Lighting%20Models/LightingModels.md#Trowbridge-ReitzAnisotropicNDF)
+- [Ward Anisotropic NDF](/Documentation/Lighting%20Models/LightingModels.md#WardAnisotropicNDF)
+
+
+## Math Utils
+- [Step AA](/Documentation/Math%20Utils/MathUtils.md#StepAA)
+- [Smooth Min](/Documentation/Math%20Utils/MathUtils.md#SmoothMin)
+- [Smooth Max](/Documentation/Math%20Utils/MathUtils.md#SmoothMax)
+- [Smoothstep 10](/Documentation/Math%20Utils/MathUtils.md#Smoothstep10)
+- [Is Inside 01 Range](/Documentation/Math%20Utils/MathUtils.md#IsInside01Range)
+- [Stairstep Terracing](/Documentation/Math%20Utils/MathUtils.md#StairstepTerracing)
+- [Direction To Signed Cube](/Documentation/Math%20Utils/MathUtils.md#DirectionToSignedCube)
+- [Coarse Normal Reconstruction](/Documentation/Math%20Utils/MathUtils.md#CoarseNormalReconstruction)
+- [Filtered Cosine](/Documentation/Math%20Utils/MathUtils.md#FilteredCosine)
+- [Get Tangent Delta](/Documentation/Math%20Utils/MathUtils.md#GetTangentDelta)
+- [Get UV Analytic Model](/Documentation/Math%20Utils/MathUtils.md#GetUVAnalyticModel)
+- [Integral Circle Approximation](/Documentation/Math%20Utils/MathUtils.md#IntegralCircleApproximation)
+- [UV ddxy](/Documentation/Math%20Utils/MathUtils.md#UVddxy)
+
+## Matrix Math
+- [As Mat2x2](/Documentation/Matrix%20Math/MatrixMath.md#AsMat2x2)
+- [Apply Mat2x2](/Documentation/Matrix%20Math/MatrixMath.md#ApplyMat2x2)
+- [As Scalar Mat2x2](/Documentation/Matrix%20Math/MatrixMath.md#AsScalarMat2x2)
+- [Get Mat2x2 Scale](/Documentation/Matrix%20Math/MatrixMath.md#GetMat2x2Scale)
+- [Get Mat2x2 Inverse Scale](/Documentation/Matrix%20Math/MatrixMath.md#GetMat2x2InverseScale)
+- [Get Mat2x2 Component](/Documentation/Matrix%20Math/MatrixMath.md#GetMat2x2Component)
+- [Mat2x2 Identity](/Documentation/Matrix%20Math/MatrixMath.md#Mat2x2Identity)
+- [Mat2x2 Break](/Documentation/Matrix%20Math/MatrixMath.md#Mat2x2Break)
+- [Mat2x2 Get Column](/Documentation/Matrix%20Math/MatrixMath.md#Mat2x2GetColumn)
+- [Mat2x2 Get Row](/Documentation/Matrix%20Math/MatrixMath.md#Mat2x2GetRow)
+- [Mat2x2 Get Diagonal](/Documentation/Matrix%20Math/MatrixMath.md#Mat2x2GetDiagonal)
+- [Mat2x2 Get Basis Vectors](/Documentation/Matrix%20Math/MatrixMath.md#Mat2x2GetBasisVectors)
+- [Scale Mat2x2](/Documentation/Matrix%20Math/MatrixMath.md#ScaleMat2x2)
+- [Mat2x2 Multiply](/Documentation/Matrix%20Math/MatrixMath.md#Mat2x2Multiply)
+- [Mat2x2 Normalize](/Documentation/Matrix%20Math/MatrixMath.md#Mat2x2Normalize)
+- [Mat2x2 Transpose](/Documentation/Matrix%20Math/MatrixMath.md#Mat2x2Transpose)
+- [Mat2x2 Determinant](/Documentation/Matrix%20Math/MatrixMath.md#Mat2x2Determinant)
+- [Mat2x2 Inverse](/Documentation/Matrix%20Math/MatrixMath.md#Mat2x2Inverse)
+- [Get Vec2 Tangent](/Documentation/Matrix%20Math/MatrixMath.md#GetVec2Tangent)
+- [Mat2x2 Rotation Matrix](/Documentation/Matrix%20Math/MatrixMath.md#Mat2x2RotationMatrix)
+- [Mat2x2 Get Rotation Angle](/Documentation/Matrix%20Math/MatrixMath.md#Mat2x2GetRotationAngle)
+- [Rotation Mat2x2 From Vector](/Documentation/Matrix%20Math/MatrixMath.md#RotationMat2x2FromVector)
+- [Mat2x2 Adjugate](/Documentation/Matrix%20Math/MatrixMath.md#Mat2x2Adjugate)
+- [As Scalar Mat3x3](/Documentation/Matrix%20Math/MatrixMath.md#AsScalarMat3x3)
+- [Get Mat3x3 Scale](/Documentation/Matrix%20Math/MatrixMath.md#GetMat3x3Scale)
+- [Project From Quad](/Documentation/Matrix%20Math/MatrixMath.md#ProjectFromQuad)
+- [Linearize Quad Projection](/Documentation/Matrix%20Math/MatrixMath.md#LinearizeQuadProjection)
+
+## Shadertrixx
+- [VR Info](/Documentation/Shadertrixx/Shadertrixx.md#VRInfo)
+- [Stereo Screen Position](/Documentation/Shadertrixx/Shadertrixx.md#StereoScreenPosition)
+- [Get VR Eye Depth](/Documentation/Shadertrixx/Shadertrixx.md#GetVREyeDepth)
+- [Camera Forward (Object Space)](/Documentation/Shadertrixx/Shadertrixx.md#CameraForwardObjectSpace)
+- [Pixelate AA](/Documentation/Shadertrixx/Shadertrixx.md#PixelateAA)
+
+## Shadow Functions
+- [GGX GSF](/Documentation/Shadow%20Functions/ShadowFunctions.md#GGXGSF)
+
+## Unity Globals
+- [DecodeHDR](/Documentation/UnityGlobals/UnityGlobals.md#DecodeHDR)
+- [Lightmap Data](/Documentation/UnityGlobals/UnityGlobals.md#LightmapData)
+- [Reflection Probe Data](/Documentation/UnityGlobals/UnityGlobals.md#ReflectionProbeData)
+
+## Utils
+- [ACES Approximation](/Documentation/Utils/Utils.md#ACESApproximation)
+- [Blackbody Approximation](/Documentation/Utils/Utils.md#BlackbodyApproximation)
+- [Kelvin Converter](/Documentation/Utils/Utils.md#KelvinConverter)
+- [RGB to BW](/Documentation/Utils/Utils.md#RGBtoBW)
+- [Box Side Mask](/Documentation/Utils/Utils.md#BoxSideMask)
+- [Stereo Eye Index](/Documentation/Utils/Utils.md#StereoEyeIndex)
+- [Transform Properties](/Documentation/Utils/Utils.md#TransformProperties)
+
+## VRChat
+- [Camera Info](/Documentation/VRChat/VRChat.md#CameraInfo)
+- [Camera Mask](/Documentation/VRChat/VRChat.md#CameraMask)
+- [Camera Mode](/Documentation/VRChat/VRChat.md#CameraMode)
+- [Mirror Info](/Documentation/VRChat/VRChat.md#MirrorInfo)
