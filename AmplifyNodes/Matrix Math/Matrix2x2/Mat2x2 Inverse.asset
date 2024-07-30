@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Mat2x2 Inverse
   m_EditorClassIdentifier: 
   m_functionInfo: "// Made with Amplify Shader Editor v1.9.5.1\n// Available at the
-    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19501\nNode;AmplifyShaderEditor.CommentaryNode;12;-736,0;Inherit;False;388;187;1/det(A);1;11;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;9;-274,-162;Inherit;False;356;187;Adj(A)/det(A)
-    = A^-1;1;7;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;8;-722,-162;Inherit;False;356;163;Adj(A);1;6;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.FunctionInput;1;-960,-112;Inherit;False;Matrix2x2;4;0;False;1;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.FunctionNode;2;-1168,-112;Inherit;False;Mat2x2
-    Identity;-1;;11;63a67a8ae86d7544ba2bf09b543bd74c;0;0;1;FLOAT4;0\nNode;AmplifyShaderEditor.FunctionNode;6;-672,-112;Inherit;False;Mat2x2
-    Adjugate;-1;;12;04796157aa4c8fc4a8e1aadb2c36d39f;0;1;2;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.FunctionNode;7;-224,-112;Inherit;False;Scale
-    Mat2x2;-1;;19;625b2f13df669fd49a5a8a4cff2fc606;0;2;1;FLOAT4;0,0,0,0;False;3;FLOAT2;2,2;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.FunctionNode;11;-688,48;Inherit;False;Get
-    Mat2x2 Inverse Scale;-1;;25;8c0fe985b9e6d644a9aaabbe5388e0d5;0;1;1;FLOAT4;0,0,0,0;False;2;FLOAT2;0;FLOAT4;6\nNode;AmplifyShaderEditor.FunctionOutput;0;128,-112;Inherit;False;True;-1;Mat2x2*;0;True;1;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nWireConnection;1;0;2;0\nWireConnection;6;2;1;0\nWireConnection;7;1;6;0\nWireConnection;7;3;11;0\nWireConnection;11;1;1;0\nWireConnection;0;0;7;0\nASEEND*/\n//CHKSM=AF9D6F2306E29AB41B0162A2D4A1F3A5E8813549"
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19501\nNode;AmplifyShaderEditor.CommentaryNode;12;-768,16;Inherit;False;472;171;1/det(A);2;15;14;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.FunctionInput;1;-960,-112;Inherit;False;Matrix2x2;4;0;False;1;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.ReciprocalOpNode;15;-464,80;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionNode;14;-736,80;Inherit;False;Mat2x2
+    Determinant;-1;;660;c94f2c5b5c3ff6143b8d764a2ae88f46;0;1;1;FLOAT4;0,0,0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionNode;2;-1168,-112;Inherit;False;Mat2x2
+    Identity;-1;;664;63a67a8ae86d7544ba2bf09b543bd74c;0;0;1;FLOAT4;0\nNode;AmplifyShaderEditor.FunctionNode;6;-672,-112;Inherit;False;Mat2x2
+    Adjugate;-1;;665;04796157aa4c8fc4a8e1aadb2c36d39f;0;1;2;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.FunctionNode;16;-224,-112;Inherit;False;Scale
+    Mat2x2;-1;;670;625b2f13df669fd49a5a8a4cff2fc606;0;2;1;FLOAT4;0,0,0,0;False;3;FLOAT;2;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.FunctionOutput;0;128,-112;Inherit;False;True;-1;Mat2x2*;0;True;1;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.CommentaryNode;9;-274,-162;Inherit;False;356;187;Adj(A)/det(A)
+    = A^-1;0;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;8;-722,-162;Inherit;False;356;163;Adj(A);0;;1,1,1,1;0;0\nWireConnection;1;0;2;0\nWireConnection;15;0;14;0\nWireConnection;14;1;1;0\nWireConnection;6;2;1;0\nWireConnection;16;1;6;0\nWireConnection;16;3;15;0\nWireConnection;0;0;16;0\nASEEND*/\n//CHKSM=7276421CC7600033A543F8650EF785CF1A8BB88C"
   m_functionName: 
   m_description: Calculates the inverse of a Matrix2x2, such that A * A^-1 = Identity
   m_additionalIncludes:

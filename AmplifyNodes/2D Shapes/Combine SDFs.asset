@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
   m_Name: Combine SDFs
   m_EditorClassIdentifier: 
-  m_functionInfo: "// Made with Amplify Shader Editor v1.9.2.2\n// Available at the
-    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19202\nNode;AmplifyShaderEditor.ConditionalIfNode;4;80,128;Inherit;False;False;5;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;0;272,128;Inherit;True;True;-1;Combined
-    SDF;1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionNode;7;-256,112;Inherit;False;Smooth
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.5.1\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19501\nNode;AmplifyShaderEditor.ConditionalIfNode;4;80,128;Inherit;False;False;5;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionNode;7;-256,112;Inherit;False;Smooth
     Min;-1;;1;6c53ae6a45931c048a3fd32e4f74e638;0;3;1;FLOAT;0;False;2;FLOAT;0.25;False;3;FLOAT;0.1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;1;-512,-32;Inherit;False;SDF
     A;1;0;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;3;-512,128;Inherit;False;Smoothness;1;2;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;2;-512,48;Inherit;False;SDF
     B;1;1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;5;-176,240;Inherit;False;Constant;_Float0;Float
-    0;0;0;Create;True;0;0;0;False;0;False;0;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMinOpNode;6;-144,-16;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.Compare;14;-192,-176;Inherit;False;4;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;1;False;3;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;17;-48,-176;Inherit;False;False;-1;Mask
-    ID;0;False;1;0;FLOAT;0;False;1;FLOAT;0\nWireConnection;4;0;3;0\nWireConnection;4;1;5;0\nWireConnection;4;2;7;0\nWireConnection;4;3;6;0\nWireConnection;4;4;6;0\nWireConnection;0;0;4;0\nWireConnection;7;1;1;0\nWireConnection;7;2;2;0\nWireConnection;7;3;3;0\nWireConnection;6;0;1;0\nWireConnection;6;1;2;0\nWireConnection;14;0;1;0\nWireConnection;14;1;2;0\nWireConnection;17;0;14;0\nASEEND*/\n//CHKSM=FEE2C0BB97A7C1538CC271163428E88ACED7C793"
+    0;0;0;Create;True;0;0;0;False;0;False;0;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMinOpNode;6;-144,-16;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.Compare;14;-192,-176;Inherit;False;4;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;1;False;3;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;0;272,128;Inherit;True;True;-1;Combined
+    SDF;0;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;17;-48,-176;Inherit;True;False;-1;Mask
+    ID;1;False;1;0;FLOAT;0;False;1;FLOAT;0\nWireConnection;4;0;3;0\nWireConnection;4;1;5;0\nWireConnection;4;2;7;0\nWireConnection;4;3;6;0\nWireConnection;4;4;6;0\nWireConnection;7;1;1;0\nWireConnection;7;2;2;0\nWireConnection;7;3;3;0\nWireConnection;6;0;1;0\nWireConnection;6;1;2;0\nWireConnection;14;0;1;0\nWireConnection;14;1;2;0\nWireConnection;0;0;4;0\nWireConnection;17;0;14;0\nASEEND*/\n//CHKSM=D0F3AA3AAAF285A989A31D4C0636C5ED22C8D1F6"
   m_functionName: 
   m_description: This function combines multiple SDF functions together
   m_additionalIncludes:

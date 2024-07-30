@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Get Vec2 Tangent
   m_EditorClassIdentifier: 
   m_functionInfo: "// Made with Amplify Shader Editor v1.9.5.1\n// Available at the
-    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19501\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;4;-240,0;Inherit;True;2;2;0;FLOAT2;0,0;False;1;FLOAT2;-1,1;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SwizzleNode;3;-432,0;Inherit;True;FLOAT2;1;0;2;3;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionInput;1;-592,0;Inherit;False;Normal;2;0;False;1;0;FLOAT2;0,1;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionOutput;0;-16,0;Inherit;False;True;-1;Tangnet;0;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nWireConnection;4;0;3;0\nWireConnection;3;0;1;0\nWireConnection;0;0;4;0\nASEEND*/\n//CHKSM=0A110504C32E967C35C5CBFD75F3E77D240E7DF0"
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19501\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;4;-240,0;Inherit;True;2;2;0;FLOAT2;0,0;False;1;FLOAT2;-1,1;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SwizzleNode;3;-432,0;Inherit;True;FLOAT2;1;0;2;3;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionInput;1;-592,0;Inherit;False;Normal;2;0;False;1;0;FLOAT2;0,1;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionOutput;0;-16,0;Inherit;False;True;-1;Tangent;0;True;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nWireConnection;4;0;3;0\nWireConnection;3;0;1;0\nWireConnection;0;0;4;0\nASEEND*/\n//CHKSM=07B5B5D62BA5261E299F561ADE1975C2DE3474CA"
   m_functionName: 
   m_description: Gets the tangent vector of a direction vector.
   m_additionalIncludes:
