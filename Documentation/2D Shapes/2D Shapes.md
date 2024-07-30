@@ -224,6 +224,30 @@
 | Annular Mask | Float | The black and white mask where the SDF is to be rendered. |
 | Annular Mask (AA) | Float | Same as above, just monochrome anti aliased. |
 
+## Realize SDF
+
+<table>
+<tr><th>Description</th><th>Node Showcase:</th></tr>
+<tr>
+    <td>
+        Finalizes an SDF into its boundary defined black and white result.
+    </td>
+    <td><p align="center"> 
+        <image src="./Images/RealizeSDF.png"/> 
+    </p></td>
+</tr>
+</table>
+
+| Input  | Type | Description |
+| :----: | :--: | :---------  |
+| SDF | Float | The SDF input to convert. |
+| Cutoff | Float | The threshold point between white and black. |
+
+| Output | Type | Description |
+| :----: | :--: | :---------  |
+| SDF Shape | Float | The result. |
+| SDF Shape (AA) | Float | Same as above, just anti aliased. |
+
 ## Round Out Shape
 
 <table>
