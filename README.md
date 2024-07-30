@@ -40,8 +40,8 @@ Node count: 139
 - [Perceptual Roughness to Mipmap Level](/Documentation/Amplify%20Bakery/AmplifyBakery.md#perceptual-roughness-to-mipmap-level)
 
 ## Coordinate Mapping
-- [Project To Box](/Documentation/Coordinate%20Mapping/CoordinateMapping.md#point-on-circle)
-- [Project To Square](/Documentation/Coordinate%20Mapping/CoordinateMapping.md#point-to-square)
+- [Project To Box](/Documentation/Coordinate%20Mapping/CoordinateMapping.md#project-to-box)
+- [Project To Square](/Documentation/Coordinate%20Mapping/CoordinateMapping.md#project-to-square)
 - [Rotate UV](/Documentation/Coordinate%20Mapping/CoordinateMapping.md#rotate-uv)
 - [ST Remapping](/Documentation/Coordinate%20Mapping/CoordinateMapping.md#st-remapping)
 - [Repeat Domain](/Documentation/Coordinate%20Mapping/CoordinateMapping.md#repeat-domain)
