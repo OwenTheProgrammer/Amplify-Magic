@@ -2,6 +2,7 @@
 
 # Conventions:
 Using any Matrix2x2, the convention for notation is as follows.
+
 $$
     \begin{bmatrix}
         A & B \\
@@ -24,7 +25,7 @@ $$
     \end{bmatrix} 
 $$
 
-with the $\_m\left[ROW\right]\left[COLUMN\right]$ notation being default.
+with the $\_m\left[\text{ROW}\right]\left[\text{COLUMN}\right]$ notation being default.
 
 ## Apply Mat2x2
 

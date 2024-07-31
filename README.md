@@ -133,7 +133,7 @@ Node count: 139
 - [Mat2x2 Inverse](/Documentation/Matrix%20Math/MatrixMath.md#mat2x2-inverse)
 - [Get Vec2 Tangent](/Documentation/Matrix%20Math/MatrixMath.md#get-vec2-tangent)
 - [Mat2x2 Rotation Matrix](/Documentation/Matrix%20Math/MatrixMath.md#mat2x2-rotation-matrix)
-- [Mat2x2 Get Rotation Angle](/Documentation/Matrix%20Math/MatrixMath.md#mat2x2mat2x2-get-rotation-angle)
+- [Mat2x2 Get Rotation Angle](/Documentation/Matrix%20Math/MatrixMath.md#mat2x2-get-rotation-angle)
 - [Rotation Mat2x2 From Vector](/Documentation/Matrix%20Math/MatrixMath.md#rotation-mat2x2-from-vector)
 - [Mat2x2 Adjugate](/Documentation/Matrix%20Math/MatrixMath.md#mat2x2-adjugate)
 - [As Scalar Mat3x3](/Documentation/Matrix%20Math/MatrixMath.md#as-scalar-mat3x3)

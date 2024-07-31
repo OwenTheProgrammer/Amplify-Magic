@@ -271,7 +271,7 @@
 <tr><th>Description</th><th>Node Showcase:</th></tr>
 <tr>
     <td>
-        Applies A Spherical Harmonics transformation to a given direction.
+        Applies a Spherical Harmonics' transformation to a given direction.
     </td>
     <td><p align="center"> 
         <image src="./Images/CombineSHTerms.png"/> 

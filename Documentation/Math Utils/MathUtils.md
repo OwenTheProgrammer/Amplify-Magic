@@ -249,6 +249,7 @@ Where $x-w$ is Sample A, $x+w$ is Sample B, and $w$ is the Domain Size.
 | Output | Float | Roughly smoothstep(x, 1, 0) |
 
 This function follows as such:
+
 $$
 \left( x^2-1 \right)^2
 $$
@@ -278,7 +279,31 @@ $$
 | Terraced Output | <span style="color:#ECE800">Float2</span> | The stairstepped input. |
 | Continuous Domain | <span style="color:#ECE800">Float2</span> | The scaled UV without stairstepping for mipmap level selection. |
 
-## UVddxy
+## Step AA
+
+<table>
+<tr><th>Description</th><th>Node Showcase:</th></tr>
+<tr>
+    <td>
+        Implements the step function with anti aliasing.
+    </td>
+    <td><p align="center"> 
+        <image src="./Images/StepAA.png"/> 
+    </p></td>
+</tr>
+</table>
+
+| Input  | Type | Description |
+| :----: | :--: | :---------  |
+| Lesser (A) | <span style="color:#EC00E8">Float4</span> | The less-than component input. |
+| Greater (B) | <span style="color:#EC00E8">Float4</span> | The greater-than component input. |
+
+
+| Output | Type | Description |
+| :----: | :--: | :---------  |
+| B >= A? | <span style="color:#EC00E8">Float4</span> | The step evaluation with anti-aliasing. |
+
+## UV ddxy
 
 <table>
 <tr><th>Description</th><th>Node Showcase:</th></tr>
